@@ -62,7 +62,7 @@ nav:
 #Author config
 author:
     name: Junyu Gao
-    email: gjy3035@gmail.com
+    email: gjy3035[at]gmail.com
     imageLink: /images/header.jpg
     simpleIntro: 空谈误国，实干兴邦！
     detailIntro:
@@ -72,8 +72,8 @@ author:
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
-  - class: icon-rss
-    url: /atom.xml
+#  - class: icon-rss
+#   url: /atom.xml
   - class: icon-weibo
     url: http://weibo.com/
   - class: icon-facebook
