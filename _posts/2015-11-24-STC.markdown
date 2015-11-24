@@ -8,14 +8,15 @@ tags: [论文学习，笔记，CV，Scene labelling]
 #### 论文是作为组内论文报告为大家讲述的，现在将一些重要思想摘录如下。
 
 
-# 摘要
+## 摘要
 
 论文题目是STC，即Simple to Complex的一个框架，使用弱标签（image label）来解决密集估计（语义分割）问题。
 整体来看，理论创新倒是不怎么强，但是在Pipeline的道路上倒是有些新意。
 
 2014年末以来，半监督的语义分割层出不穷，究其原因还是因为pixel级别的GroundTruth太难标注，因此若监督成了人们研究的一个热门方向。
 
-# 主要思想
+
+## 主要思想
 
 
 作者的核心思想是提出了层层递进的三个DCNN，用前一个CNN的结果来作为下一个CNN的结果。
@@ -40,10 +41,12 @@ tags: [论文学习，笔记，CV，Scene labelling]
 ![framework](../imgs/STC_franmework.png)
 	
 	
-##Tips:
+
+## Tips:
 
 - 文章中的Simple Images是来自于自建的Flickr Clean数据集。Complex Images是来自于Pascal VOC的train_aug.
 
-#参考文献：
+
+## 参考文献：
 
 - Wei Y, Liang X, Chen Y, et al. STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation[J]. arXiv preprint arXiv:1509.03150, 2015.
