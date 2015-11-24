@@ -12,7 +12,7 @@ tags: [linux学习,环境配置]
 
 最近搞了一台小型服务器。虽然在教研室里，但来回跑还是不方便，就想着像大服务器一样搞个VNC远程登陆。在服务器端安装完VNC之后。Windows端出现花屏现象：
 
-![framework](../imgs/vnc1.png)
+<img src='../imgs/vnc1.png' width=80% />
 
 
 ## 原因分析
@@ -22,15 +22,17 @@ tags: [linux学习,环境配置]
 ## 解决方案
 - 安装xubuntu：
 
-·apt-getinstall xubuntu-desktop
-
+·
+apt-getinstall xubuntu-desktop
 cd ~/.vnc
-
-vimxstartup·
+vim xstartup
+·
 
 在最后一行添加startxfce4 &，并且将
-unsetSESSION_MANAGER
-unsetDBUS_SESSION_BUS_ADDRESS
+`
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+`
 这两行代码注释掉即可。
 
 - 接下来，由于改变了桌面，新桌面在VNC中并不能打开原来的终端（当然在服务器端使用原始终端是正常的），因此，需要使用xfce4的终端。
@@ -39,12 +41,12 @@ unsetDBUS_SESSION_BUS_ADDRESS
 
 先在搜索中搜索到xfce桌面的终端。记录下命令中的值。
 
-![framework](../imgs/vnc2.png)
+<img src='../imgs/vnc2.png' width=80% />
 
 之后在桌面新建一个启动器，在“命令”中输入刚才的命令即可创建完毕。类似的，对于终端启动的快捷键的设置，打开键盘，添加该命令并设置终端快捷键即可。
 
 - 在xfce4终端中，Tab制表符并不能正常预读，因此需要对其进行设置：
 
-![framework](../imgs/vnc3.png)
+<img src='../imgs/vnc3.png' width=80% />
 
 在设置中将tab快捷方式清除即可。
