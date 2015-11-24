@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation
 category: "reading"
+title:  论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation
 tags: [论文学习，笔记，CV，Scene labelling]
 date: 2015-11-24 15:25:02 +08:00
 ---
