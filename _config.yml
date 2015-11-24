@@ -1,117 +1,23 @@
-# Where things are
-source:       .
-destination:  ./_site
-plugins:      ./_plugins
-layouts:      ./_layouts
-paginate:     8
-
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext:  "textile"
-
-# Filtering Content
-show_drafts:  null
-limit_posts:  0
-future:       true
-unpublished:  false
-
-# Conversion
-markdown:     kramdown
-highlighter:  pygments
-lsi:          false
-excerpt_separator: "\n\n"
-
-# Serving
-detach:       false
-port:         4000
-host:         127.0.0.1
-baseurl:      "" # does not include hostname
-
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
-
-
-#Site config
-title: Junyu Gao's Bolg
-description: Deep Learning, Conputer Vision
-keywords: Computer Vision
+markdown: redcarpet
+permalink: /:categories/:title.html
 url: 
-feed: /atom.xml
-#favicon: /images/shortcut.jpg
+lsi: false
+pygments: true
+safe: true
+auto: false 
 
-#Nav config
-nav:
-  - text: 首页
-    url: /index.html
-  - text: 分类目录 
-    url: /categories.html
-  - text: 文章归档
-    url: /archives.html
-  - text: 关于我
-    url: /about.html
-  - text: 友情链接
-    url: /links.html
+paginate: 8
+paginate_path: "page:num"
 
-#Author config
-author:
-    name: Junyu Gao
-    email: gjy3035[at]gmail.com
-    imageLink: /images/header.jpg
-    simpleIntro: 空谈误国，实干兴邦！
-    detailIntro:
-      <p>计算机视觉在读研究生。</p>
-      <p></p>
-      <p></p>
+# presonal config
+domain: 
+title: Junyu Gao's Blog
+description: Computer Vision, Deep Learning, Scene Labeling, Java Web, Android...
+author: Henry Gao
+email: gjy3035#gmail.com
+github: gjy3035
 
-#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
-follow:
-#  - class: icon-rss
-#   url: /atom.xml
-  - class: icon-weibo
-    url: http://weibo.com/
-  - class: icon-facebook
-    url: http://facebook.com/
-  - class: icon-github-alt
-    url: https://github.com/zJiaJun/
-  - class: icon-twitter
-    url: http://twitter.com/
-  - class: icon-google-plus
-    url: https://plus.google.com/
-
-#Links
-customLinks:
-  - item:
-    - text: 暂无
-      url: 
-    message: Friends    
-  - item:
-    - text: DL
-      url: http://www./
-    message: About DL
-
-
-#baidu tongji
-baiduTongji:
-  config: true
-  id: 3e755b47fa873722fb514a3e7e0a0fa8
-
-#comment config
-disqus:
-  config: false
-  id: piznblog
-
-duoshuo:
-  config: true
-  id: gaojunyu
-
-#baidu share config
-baiduShare:
-  config: true
-  
+config:
+  js_dir:
+  img_dir:/imgs
+  css_dir:
