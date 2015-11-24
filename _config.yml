@@ -19,5 +19,5 @@ github: gjy3035
 
 config:
   js_dir:
-  img_dir:/imgs
+  img_dir:
   css_dir:

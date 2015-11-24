@@ -10,7 +10,7 @@ paginate: 8
 paginate_path: "page:num"
 
 # presonal config
-domain: www.panxw.com
+domain: 
 title: Junyu Gao's Blog
 description: Computer Vision, Deep Learning, Scene Labeling, Java Web, Android...
 author: Henry Gao
