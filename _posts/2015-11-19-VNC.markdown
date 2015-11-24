@@ -23,14 +23,14 @@ tags: [linux学习,环境配置]
 - 安装xubuntu：
 
 	`
-	apt-getinstall xubuntu-desktop
-	cd ~/.vnc
+	apt-getinstall xubuntu-desktop  
+	cd ~/.vnc  
 	vim xstartup
 	`
 
 	在最后一行添加startxfce4 &，并且将
 	`
-	unset SESSION_MANAGER
+	unset SESSION_MANAGER  
 	unset DBUS_SESSION_BUS_ADDRESS
 	`
 	这两行代码注释掉即可。
