@@ -1,32 +1,48 @@
 ---
 layout: default
-title: 
-keywords: Deep Learning, Computer Vision
+title: "首页：Home"
 ---
+<h1 class="page-header">
+  <small>
+    {{ site.description }}
+  </small>
+</h1>
+<!-- Loop output paged posts -->
 {% for post in paginator.posts %}
-    <div class="article">
-        <h3 class="title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-        <article class="rexp">
-            <p>{{ post.excerpt }}</p>
-        </article>
-        <a href="{{ site.url }}{{ post.url }}" class="more"><i class="icon-link"></i></a>
-        <div class="info">
-            <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">{{ post.date | date_to_string }}</span>
-        </div>
-    </div>
+<h2>
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a> 
+  <div class="post-date">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ post.date | date_to_string }}
+  </div>
+</h2>
+<hr>
+{{ post.excerpt }}
+	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
+<hr>
 {% endfor %}
-{% if paginator.total_pages > 1 %}
-    <nav class="pagination fn-clear">
-        <span class="pagination-icon"><i class=" icon-copy"></i></span>
-        <ul class="pagination-list">
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <li class="current"><a href="javascript:void(0);">{{ page }}</a></li>
-                {% else %}
-                    <li><a href="{{ site.url }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </nav>
-{% endif %}
+
+<!-- Pager indicator -->
+<ul class="pager">
+  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+  <li class="previous">
+    <a href="{{ site.url }}/">
+      &larr; Older
+    </a>
+  </li>
+  {% else %}
+  <li class="previous">
+    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+      &larr; Older
+    </a>
+  </li>
+  {% endif %} {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+      Newer &rarr;
+    </a>
+  </li>
+  {% endif %}
+</ul>
