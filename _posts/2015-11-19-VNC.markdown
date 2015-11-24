@@ -12,7 +12,7 @@ tags: [linux学习,环境配置]
 
 最近搞了一台小型服务器。虽然在教研室里，但来回跑还是不方便，就想着像大服务器一样搞个VNC远程登陆。在服务器端安装完VNC之后。Windows端出现花屏现象：
 
-<img src='../imgs/vnc1.png' width=80% />
+	<img src='../imgs/vnc1.png' width=80% />
 
 
 ## 原因分析
