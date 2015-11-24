@@ -12,12 +12,12 @@ paginate_path: "page:num"
 # presonal config
 domain: 
 title: Junyu Gao's Blog
-description: Computer Vision, Deep Learning, Scene Labeling, Java Web, Android...
+description: Computer Vision, Deep Learning, Scene Labeling...
 author: Henry Gao
 email: gjy3035#gmail.com
 github: gjy3035
 
 config:
   js_dir:
-  img_dir:/imgs
+  img_dir:
   css_dir:
