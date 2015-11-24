@@ -44,7 +44,7 @@ description: Deep Learning, Conputer Vision
 keywords: Computer Vision
 url: 
 feed: /atom.xml
-favicon: /images/shortcut.jpg
+#favicon: /images/shortcut.jpg
 
 #Nav config
 nav:
