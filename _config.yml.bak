@@ -21,17 +21,3 @@ config:
   js_dir:
   img_dir:
   css_dir:
-  
-follow:
-  - class: icon-rss
-    url: /atom.xml
-  - class: icon-weibo
-    url: http://weibo.com/
-  - class: icon-facebook
-    url: http://facebook.com/
-  - class: icon-github-alt
-    url: https://github.com/zJiaJun/
-  - class: icon-twitter
-    url: http://twitter.com/
-  - class: icon-google-plus
-    url: https://plus.google.com/116595571760191938657/about
