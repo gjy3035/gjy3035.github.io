@@ -3,7 +3,7 @@ layout: post
 category: "linux"
 title:  "Ubutun14.04下vnc花屏的解决"
 tags: [linux学习,环境配置]
-summary:  "Ubutun14.04下vnc花屏的解决"
+description:  "Ubutun14.04下vnc花屏的解决"
 ---
 
 

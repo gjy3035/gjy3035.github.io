@@ -3,7 +3,7 @@ layout: post
 category: "reading"
 title:  "论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation"
 tags: [论文学习,笔记,CV,Scene labelling]
-summary: "论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation"
+description: "论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation"
 ---
 
 #### 论文是作为组内论文报告为大家讲述的，现在将一些重要思想摘录如下。
