@@ -37,7 +37,8 @@ date: 2015-11-24 15:25:02 +08:00
 
 这样，我们就得到了最终的网络：P DCNN。附流程图如下：
 
-	![framework](../imgs/franmework.png)
+	
+![framework](../imgs/franmework.png)
 	
 	
 ##Tips:
