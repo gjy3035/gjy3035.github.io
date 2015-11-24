@@ -3,7 +3,6 @@ layout: post
 category: "reading"
 title:  论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation
 tags: [论文学习，笔记，CV，Scene labelling]
-date: 2015-11-24 15:25:02 +08:00
 ---
 
 #### 论文是作为组内论文报告为大家讲述的，现在将一些重要思想摘录如下。
@@ -38,7 +37,7 @@ date: 2015-11-24 15:25:02 +08:00
 这样，我们就得到了最终的网络：P DCNN。附流程图如下：
 
 	
-![framework](../imgs/franmework.png)
+![framework](../imgs/STC_franmework.png)
 	
 	
 ##Tips:
