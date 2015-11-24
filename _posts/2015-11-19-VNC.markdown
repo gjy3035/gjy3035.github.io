@@ -22,31 +22,31 @@ tags: [linux学习,环境配置]
 ## 解决方案
 - 安装xubuntu：
 
-·
-apt-getinstall xubuntu-desktop
-cd ~/.vnc
-vim xstartup
-·
+	`
+	apt-getinstall xubuntu-desktop
+	cd ~/.vnc
+	vim xstartup
+	`
 
-在最后一行添加startxfce4 &，并且将
-`
-unset SESSION_MANAGER
-unset DBUS_SESSION_BUS_ADDRESS
-`
-这两行代码注释掉即可。
+	在最后一行添加startxfce4 &，并且将
+	`
+	unset SESSION_MANAGER
+	unset DBUS_SESSION_BUS_ADDRESS
+	`
+	这两行代码注释掉即可。
 
 - 接下来，由于改变了桌面，新桌面在VNC中并不能打开原来的终端（当然在服务器端使用原始终端是正常的），因此，需要使用xfce4的终端。
 
-为了方便使用，需要指定快捷键以及添加桌面图标。桌面图标添加方法如下：
+	为了方便使用，需要指定快捷键以及添加桌面图标。桌面图标添加方法如下：
 
-先在搜索中搜索到xfce桌面的终端。记录下命令中的值。
+	先在搜索中搜索到xfce桌面的终端。记录下命令中的值。
 
-<img src='../imgs/vnc2.png' width=80% />
+	<img src='../imgs/vnc2.png' width=80% />
 
-之后在桌面新建一个启动器，在“命令”中输入刚才的命令即可创建完毕。类似的，对于终端启动的快捷键的设置，打开键盘，添加该命令并设置终端快捷键即可。
+	之后在桌面新建一个启动器，在“命令”中输入刚才的命令即可创建完毕。类似的，对于终端启动的快捷键的设置，打开键盘，添加该命令并设置终端快捷键即可。
 
 - 在xfce4终端中，Tab制表符并不能正常预读，因此需要对其进行设置：
 
-<img src='../imgs/vnc3.png' width=80% />
+	<img src='../imgs/vnc3.png' width=80% />
 
-在设置中将tab快捷方式清除即可。
+	在设置中将tab快捷方式清除即可。
