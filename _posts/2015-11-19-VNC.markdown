@@ -22,17 +22,17 @@ tags: [linux学习,环境配置]
 ## 解决方案
 - 安装xubuntu：
 
-	`
+	```
 	apt-getinstall xubuntu-desktop  
 	cd ~/.vnc  
 	vim xstartup
-	`
+	```
 
 	在最后一行添加startxfce4 &，并且将
-	`
+	```
 	unset SESSION_MANAGER  
 	unset DBUS_SESSION_BUS_ADDRESS
-	`
+	```
 	这两行代码注释掉即可。
 
 - 接下来，由于改变了桌面，新桌面在VNC中并不能打开原来的终端（当然在服务器端使用原始终端是正常的），因此，需要使用xfce4的终端。
