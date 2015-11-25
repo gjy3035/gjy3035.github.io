@@ -1,5 +1,10 @@
-<form class="navbar-search" action="search.html">
-  <input type="text" class="search-query" placeholder="Search">
+<form action="/search/" accept-charset="utf-8">
+  <div class="input-group">
+    <input class="form-control" id="searchbox" type="text" name="query" placeholder="<%= __('search') %>">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">Go!</button>
+    </span>
+  </div>
 </form>
 
 <!--<form class="navbar-search pull-right" action="search.html">

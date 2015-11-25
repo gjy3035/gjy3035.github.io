@@ -21,3 +21,7 @@ config:
   js_dir:
   img_dir:
   css_dir:
+  
+widgets:
+ sidebar: # ²à±ßÀ¸
+  - tapir.ejs
