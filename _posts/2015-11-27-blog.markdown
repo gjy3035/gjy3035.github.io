@@ -64,42 +64,41 @@ Github上的博客属于静态页面，也就是无法使用数据库。这为�
 
 	Tapir实际是通过搜索Atom.html中的summary的内容。因此，在atom.xml中summary标签中的内容将决定最终的搜索结果。
 
-2.1 获取搜索代码
+	2.1 获取搜索代码
 
-我们在 http://tapirgo.com/ 中生成自己搜索代码。
-我们需要填写自己的feed网页和电子邮箱，如下图：
+	我们在 http://tapirgo.com/ 中生成自己搜索代码。我们需要填写自己的feed网页和电子邮箱，如下图：
 
-<div align="center"><img src='../imgs/blog2.png' width=80% /></div>
+	<div align="center"><img src='../imgs/blog2.png' width=80% /></div>
 
-点击Go之后，会生成各种代码，我们会得到自己网站的token与secret token。secret自己保存，token使我们要在网页中使用的。
+	点击Go之后，会生成各种代码，我们会得到自己网站的token与secret token。secret自己保存，token使我们要在网页中使用的。
 
-2.2 添加搜索框
+	2.2 添加搜索框
 
-在网页合适位置，加入搜索代码：
+	在网页合适位置，加入搜索代码：
 
-{% highlight html %}
-<form action="search.html" accept-charset="utf-8">
-  <div class="input-group">
-    <input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
-    <span class="input-group-btn">
-      <button class="btn btn-default" type="submit">Go!</button>
-    </span>
-  </div>
-</form>
-{% endhighlight %} 
+	{% highlight html %}
+	<form action="search.html" accept-charset="utf-8">
+	  <div class="input-group">
+	    <input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
+	    <span class="input-group-btn">
+	      <button class="btn btn-default" type="submit">Go!</button>
+	    </span>
+	  </div>
+	</form>
+	{% endhighlight %} 
 
-2.3 创建搜索页面
+	2.3 创建搜索页面
 
-目的在于执行搜索请求并返回结果：
+	目的在于执行搜索请求并返回结果：
 
-{% highlight html %}
-<div id="search_results"></div>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-tapir.min.js"></script>
-<script>
-$('#search_results').tapir({'token': 'your token'});
-</script>
-{% endhighlight %} 
+	{% highlight html %}
+	<div id="search_results"></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-tapir.min.js"></script>
+	<script>
+	$('#search_results').tapir({'token': 'your token'});
+	</script>
+	{% endhighlight %} 
 
 
 至此，一个基本拥有完整功能的博客就建成了。
