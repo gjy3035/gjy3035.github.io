@@ -22,4 +22,6 @@ config:
   img_dir:
   css_dir:
   
-
+pygments: true
+safe: true
+auto: true
