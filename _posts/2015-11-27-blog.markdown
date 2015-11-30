@@ -78,12 +78,12 @@ Github上的博客属于静态页面，也就是无法使用数据库。这为�
 
 	{% highlight html linenos %}
 		<form action="search.html" accept-charset="utf-8">
-		<div class="input-group">
-	    	<input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
-	    	<span class="input-group-btn">
-	    	  <button class="btn btn-default" type="submit">Go!</button>
-	    	</span>
-		</div>
+			<div class="input-group">
+	    		<input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
+	    		<span class="input-group-btn">
+	    		  <button class="btn btn-default" type="submit">Go!</button>
+	    		</span>
+			</div>
 		</form>
 	{% endhighlight %}
 
@@ -96,7 +96,7 @@ Github上的博客属于静态页面，也就是无法使用数据库。这为�
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-tapir.min.js"></script>
 		<script>
-		$('#search_results').tapir({'token': 'your token'});
+			$('#search_results').tapir({'token': 'your token'});
 		</script>
 	{% endhighlight %}
 
