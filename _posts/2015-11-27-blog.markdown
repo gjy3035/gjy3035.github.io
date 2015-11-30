@@ -76,7 +76,7 @@ Github上的博客属于静态页面，也就是无法使用数据库。这为�
 
 	在网页合适位置，加入搜索代码：
 
-```html
+{% highlight html linenos %}
 	<form action="search.html" accept-charset="utf-8">
 	<div class="input-group">
     	<input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
@@ -85,20 +85,20 @@ Github上的博客属于静态页面，也就是无法使用数据库。这为�
     	</span>
 	</div>
 	</form>
-```
+{% endhighlight %}
 
 	2.3 创建搜索页面
 
 	目的在于执行搜索请求并返回结果：
 
-```html
+{% highlight html linenos %}
 	<div id="search_results"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-tapir.min.js"></script>
 	<script>
 	$('#search_results').tapir({'token': 'your token'});
 	</script>
-```
+{% endhighlight %}
 
 
 至此，一个基本拥有完整功能的博客就建成了。
