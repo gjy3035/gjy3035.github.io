@@ -25,3 +25,4 @@ config:
 pygments: true
 safe: true
 auto: true
+highlight: true
