@@ -34,7 +34,7 @@ train_val.prototxt文件是我们在训练网络时的网络定义文件。也�
 ## 生成数据
 
 和图像分类不同的是，每一个图像并不是一个标量标签，而是一个Map，或者叫做矩阵。因此，我们需要分别生成图像和GroundTruth（以下简称GT）的LMDB。然后输入到网络中去进行训练。之前我们在修改train_val.prototxt时，大家可能都已经注意到训练集和验证集分别有两个输入（我仅仅列了训练集的输入）：
-	```
+	{% highlight %}
     layer {
       name: "data"
       type: "Data"
@@ -66,7 +66,7 @@ train_val.prototxt文件是我们在训练网络时的网络定义文件。也�
         backend: LMDB
       }
     }
-	```
+	{% endhighlight %}
 为了完成end-to-end的训练，分开输入的情况完美满足了我们的需求。
 
 接下来就是数据的生成了，参考[Issue1698](https://github.com/BVLC/caffe/issues/1698) 和其他人的代码，我的数据生成代码如下：
