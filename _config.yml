@@ -11,7 +11,7 @@ paginate_path: "page:num"
 
 # presonal config
 domain: gjy3035.github.io
-title: Junyu Gao's Blog£¨¸ß¾ýÓî£©
+title: Junyu Gao's Blog
 description: Computer Vision, Deep Learning, Scene Labeling...
 author: Henry Gao
 email: gjy3035#gmail.com
