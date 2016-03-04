@@ -74,7 +74,7 @@ GLIBC_PRIVATE
 
 OK，大功告成！
 
-##<font color=red>注！！！：如果想更换系统的libc版本，一定要在root权限下操作，否则，在删除或者重命名原来的链接后，大部分命令包括（sudo，su）将无法使用。</font>
+<font color=red>注！！！：如果想更换系统的libc版本，一定要在root权限下操作，否则，在删除或者重命名原来的链接后，大部分命令包括（sudo，su）将无法使用。</font>
 
 
 
