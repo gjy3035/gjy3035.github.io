@@ -5,6 +5,26 @@ title:  "编译caffe遇到的问题汇总"
 tags: [CAFFE]
 description:  "编译caffe遇到的问题汇总"
 ---
+# 2016.3.4更新
+### K80上一直忘记安装了cudnn，现在记录如下：
+
+## 环境是cuda7.5，对应cudnn v3，即7。0。
+
+解压之后，
+{% highlight python linenos %}
+$ sudo cp include/cudnn.h /usr/local/include  
+$ sudo cp lib64/libcudnn.* /usr/local/lib  
+{% endhighlight %}
+
+链接库文件，
+{% highlight python linenos %}
+$ sudo ln -sf /usr/local/lib/libcudnn.so.7.0.64 /usr/local/lib/libcudnn.so.7.0  
+$ sudo ln -sf /usr/local/lib/libcudnn.so.7.0 /usr/local/lib/libcudnn.so  
+$ sudo ldconfig -v 
+{% endhighlight %}
+
+在caffe的MakeFile中打开CUDNN即可。
+
 # 2016.1.26更新
 
 ### K80来了一周了，为了大面积实验，再次安装caffe。好在现在可以在几小时内安装完成。想想去年这个时候，花了一周多时间搭建环境，还真是有毅力：）
