@@ -1,9 +1,9 @@
 ---
 layout: post
 category: "reading"
-title:  "论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation"
-tags: [论文学习,笔记,CV,Scene labelling]
-description: "论文笔记--STC: A Simple to Complex Framework for Weakly-supervised Semantic Segmentation"
+title:  "论文笔记--SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and < 1MB model size"
+tags: [论文学习,笔记,CV,CNN]
+description: "论文笔记--SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and < 1MB model size"
 ---
 
 #### 最近正好在做关于神经网络剪枝的实验，正好看到这篇文章，感觉效果不错，特此分享一下。
