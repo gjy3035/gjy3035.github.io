@@ -68,7 +68,7 @@ strings libstdc++.so.6.0.18| strings /usr/lib64/libstdc++.so.6|grep GLIBCXX
 这里已经安装好了GCC-4.8.2，因此需要修改软连接即可。
 
 需要连接的文件存在于```gcc-build-4.8.2/x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs/libstdc++.so.6.0.18```下面。
-但需要注意的是src目录下的.lib文件夹是隐藏的，需要使用root权限才可以看到。
+但需要注意的是src目录下的.lib文件夹是隐藏的，需要使用root权限才可以看到，将其复制到/usr/lib64/下。
 接下来，就是要修改连接，让原本的libstdc++.so.6指向ibstdc++.so.6.0.18。
 {% highlight python linenos %}
 # cd /usr/lib64
