@@ -97,6 +97,7 @@ $ sudo make install
 ## 5：使用cuDNN加速
 
 已经完成下载放于/opt/cuda/下。
+
 ```
 $ cd /opt/cuda
 $ sudo cp include/cudnn.h /usr/local/include
@@ -116,33 +117,19 @@ gflags安装失败，编译caffe时提示应该按照```CXXFLAGS="-fPIC"```来�
 
 # 安装Caffe
 
-	```
-	>>>make all -j40
-	>>>make test -j40
-	#选择GPU
-	>>>export CUDA_VISIBLE_DEVICES=0
-	>>>make runtest -j40
-	>>>make pycaffe
-	#如果打开了matlab wrapper，请编译matlab接口
-	>>>make matcaffe
-	>>>make pycaffe
-	```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+>>>make all -j40
+>>>make test -j40
+#选择GPU
+>>>export CUDA_VISIBLE_DEVICES=0
+>>>make runtest -j40
+>>>make pycaffe
+#如果打开了matlab wrapper，请编译matlab接口
+>>>make matcaffe
+>>>make pycaffe
+```
 
 ## 参考：
+
 [1]：http://caffe.berkeleyvision.org/install_yum.html
 [2]：http://my.oschina.net/speedinghzl/blog/464142
