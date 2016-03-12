@@ -1,0 +1,35 @@
+---
+layout: post
+category: "reading"
+title:  "论文笔记--N4-Fields: Neural Network Nearest Neighbor Fields for Image Transforms"
+tags: [CNN,深度学习,CV]
+description: "论文笔记--N4-Fields: Neural Network Nearest Neighbor Fields for Image Transforms"
+---
+
+## Abstract & Introduction
+### ○ 边缘检测
+
+CNN与Nearest neighbor search(近邻搜索)结合
+
+在网络最高层的输出使用最近邻搜索
+			
+### ○ 测试阶段：
+
+N4场将Patch通过CNN，对于给定的每一个Patch，都会输出一个低维的向量。
+
+### ○ 第二阶段，使用近邻搜索从训练集中找到匹配的patch
+
+## N4 Fields
+### ○ 训练：仅仅在神经网络阶段需要
+
+对于输出进行PCA降维
+
+### ○ CNN实现细节
+
+使用AlexNet
+
+训练集trick：对图像人为地进行旋转，映射
+
+## 参考：
+
+[1]：Ganin Y, Lempitsky V. N^ 4-Fields: Neural Network Nearest Neighbor Fields for Image Transforms[M]//Computer Vision--ACCV 2014. Springer International Publishing, 2014: 536-551.

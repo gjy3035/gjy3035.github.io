@@ -5,7 +5,7 @@ title:  "编译caffe遇到的问题汇总"
 tags: [CAFFE]
 description:  "编译caffe遇到的问题汇总"
 ---
-# 2016.3.4更新
+#### 2016.3.4更新
 ### K80上一直忘记安装了cudnn，现在记录如下：
 
 ## 环境是cuda7.5，对应cudnn v3，即7。0。
@@ -44,7 +44,7 @@ $ sudo ldconfig -v
 
 
 
-# 2016.1.13更新
+#### 2016.1.13更新
 
 ## 问题描述
 
@@ -106,7 +106,7 @@ GLIBCXX_DEBUG_MESSAGE_LENGTH
 
 可以看到最新版本已经到了3.4.19。
 
-# 2016.1.11更新
+#### 2016.1.11更新
 
 ## 问题描述
 
@@ -119,6 +119,39 @@ GLIBCXX_DEBUG_MESSAGE_LENGTH
 对于这样的问题，只需要加入一行代码，```export CUDA_VISIBLE_DEVICES=0```
 
 这样以来，runtest就可以顺利通过了。
+
+####2015.3.25 更新
+
+## 问题
+
+CuDNN是专门针对Deep Learning框架设计的一套GPU计算加速方案，目前支持的DL库包括Caffe，ConvNet, Torch7等。
+
+CuDNN可以在官网免费获得，注册帐号后即可下载。官网没有找到安装说明，下载得到的压缩包内也没有Readme. 不过google一下就会找到许多说明。基本原理是把lib文件加入到系统能找到的lib文件夹里， 把头文件加到系统能找到的include文件夹里就可以。这里把他们加到CUDA的文件夹下（[参考这里](https://groups.google.com/forum/#!searchin/caffe-users/cudnn/caffe-users/nlnMFI0Mh7M/8Y4z1VCcBr4J)）
+
+## 解决
+{% highlight python linenos %}
+tar -xzvf cudnn-6.5-linux-R1.tgz
+cd cudnn-6.5-linux-R1
+sudo cp lib* /usr/local/cuda/lib64/
+sudo cp cudnn.h /usr/local/cuda/include/
+{% endhighlight %}
+
+执行后发现还是找不到库， 报错
+```error while loading shared libraries: libcudnn.so.6.5: cannot open shared object file: No such file or directory```,而lib文件夹是在系统路径里的，用ls -al发现是文件权限的问题，因此用下述命令先删除软连接
+{% highlight python linenos %}
+cd /usr/local/cuda/lib64/
+sudo rm -rf libcudnn.so libcudnn.so.6.5
+{% endhighlight %}
+
+然后修改文件权限，并创建新的软连接
+
+{% highlight python linenos %}
+sudo chmod u=rwx,g=rx,o=rx libcudnn.so.6.5.18 
+sudo ln -s libcudnn.so.6.5.18 libcudnn.so.6.5
+sudo ln -s libcudnn.so.6.5 libcudnn.so
+{% endhighlight %}
+
+
 
 
 
