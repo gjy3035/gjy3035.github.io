@@ -1,9 +1,9 @@
 ---
 layout: post
 category: "reading"
-title:  "深度学习之目标检测：R-CNN/Fast RCNN/Faster RCNN"
+title:  "深度学习之目标检测：R-CNN/Fast RCNN/Faster RCNN(1)"
 tags: [论文学习,目标检测,CV,CNN]
-description: "深度学习之目标检测：R-CNN/Fast RCNN/Faster RCNN"
+description: "深度学习之目标检测：R-CNN/Fast RCNN/Faster RCNN(1)"
 ---
 
 #### 最近又转型做目标检测了，所以目标检测方向将最著名的RCNN做一下笔记。
@@ -35,15 +35,7 @@ description: "深度学习之目标检测：R-CNN/Fast RCNN/Faster RCNN"
 
 ## Fast RCNN
 
-### 思想
+[详见]()
 
-有了RCNN，我们发现其速度并不快，并且定位和分类是独立的，这样大大限制了检测速度。因此，本文着重解决<b>如何同时输出bbox和label</b>的问题。
-
-### 主要框架
-
-----未完待续------
-
-
-
-
-## 参考文献：
+## 参考文献:
+[1] Girshick R, Donahue J, Darrell T, et al. Rich feature hierarchies for accurate object detection and semantic segmentation[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2014: 580-587.
