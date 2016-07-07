@@ -2,7 +2,7 @@
 layout: default
 title: "关于：About"
 ---
-##基本信息
+## 基本信息
 
 - 姓名：高君宇
 - 本科：西北工业大学，计算机学院
@@ -10,7 +10,7 @@ title: "关于：About"
 
 - 电子邮件：gjy3035#gmail.com
 
-##Links
+## Links
 
 GitHub: <https://github.com/gjy3035/>  
 
