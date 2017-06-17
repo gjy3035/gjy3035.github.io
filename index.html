@@ -1,48 +1,38 @@
 ---
 layout: default
-title: "高君宇の博客"
 ---
-<h1 class="page-header">
-  <small>
-    {{ site.description }}
-  </small>
-</h1>
-<!-- Loop output paged posts -->
-{% for post in paginator.posts %}
-<h2>
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a> 
-  <div class="post-date">
-	<span class="glyphicon glyphicon-time"></span>
-	{{ post.date | date_to_string }}
-  </div>
-</h2>
-<hr>
-{{ post.excerpt }}
-	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
-<hr>
-{% endfor %}
+<div id="main">
+  <section>
+    {% for post in site.posts limit:1 %}
+      <header>
+        <h1>{{ post.title }}</h1>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+      </header>
+      <section>
+        {{ post.content }}
+        <p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="button"><strong>&#9998;</strong> Edit post</a></p>
+      </section>
+    {% endfor %}
+  </section>
 
-<!-- Pager indicator -->
-<ul class="pager">
-  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-  <li class="previous">
-    <a href="{{ site.url }}/">
-      &larr; Older
-    </a>
-  </li>
-  {% else %}
-  <li class="previous">
-    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
-      &larr; Newer
-    </a>
-  </li>
-  {% endif %} {% endif %} {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.url }}/page{{ paginator.next_page }}">
-       Older&rarr;
-    </a>
-  </li>
-  {% endif %}
-</ul>
+  <section>
+    <div class="row">
+      {% for post in site.posts offset:1 %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small)">
+          <header>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          </header>
+          <section>
+            {{ post.excerpt }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ post.url }}" class="button">Read More</a></li>
+              <li class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="button"><strong>&#9998;</strong> Edit post</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+</div>

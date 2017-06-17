@@ -1,39 +1,51 @@
---- 
-layout: default 
---- 
-<!-- Blog Post -->
-<!-- Title -->
-<h2>
-  {{ page.title }}
-  <div class="post-date"><a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank">纠错</a>&nbsp;&nbsp;
-	<span class="glyphicon glyphicon-time"></span>
-	{{ page.date | date_to_string }}
-  </div>
-</h2>
-<!-- Author -->
-<hr>
-{{ content }}
-<br/>
-<div style="margin-top:10px;margin-bottom:10px">
-  {%if page.previous%}
-  <span class="next">
-    上篇：
-    <a href="{{page.previous.url}}">
-      {{page.previous.title}}
-    </a>
-  </span>
-  {%endif%} 
-  {%if page.next%}
-  <span class="prev">
-    下篇：
-    <a href="{{page.next.url}}">
-      {{page.next.title}}
-    </a>
-  </span>
-  {%endif%}
-</div>
-<hr>
-<!-- Blog Comments -->
-<div class="media">
-  {% include comment.html %} 
+---
+layout: default
+---
+<div id="main">
+  <article>
+    <header>
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+
+    <section>
+      {{ content }}
+    </section>
+
+    <footer>
+      <div class="row">
+      {% if page.previous %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
+          <header>
+            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.previous.excerpt }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
+
+      {% if page.next %}
+        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
+          <header>
+            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
+          </header>
+          <section>
+            {{ page.next.excerpt | markdownify }}
+          </section>
+          <footer>
+            <ul class="actions">
+              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
+            </ul>
+          </footer>
+        </article>
+      {% endif %}
+      </div>
+    </footer>
+  </article>
 </div>
