@@ -15,6 +15,7 @@ layout: default
     {% endfor %}
   </section>
 
+<<<<<<< HEAD
   <section>
     <div class="row">
       {% for post in site.posts offset:1 %}
@@ -36,3 +37,27 @@ layout: default
     </div>
   </section>
 </div>
+=======
+<!-- Pager indicator -->
+<ul class="pager">
+  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+  <li class="previous">
+    <a href="{{ site.url }}/">
+      &larr; Newer
+    </a>
+  </li>
+  {% else %}
+  <li class="previous">
+    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+      &larr; Newer
+    </a>
+  </li>
+  {% endif %} {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+       Older&rarr;
+    </a>
+  </li>
+  {% endif %}
+</ul>
+>>>>>>> origin/master
