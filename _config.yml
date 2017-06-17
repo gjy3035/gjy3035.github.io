@@ -1,5 +1,5 @@
 locale: "en-US"
-title: Strata # Title of your site
+title: Junyu Gao's Homepage # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name: Your Name
-  email: your-email@domain.com
+  name: Junyu Gao
+  email: gjy3035 at gmail dot com
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
