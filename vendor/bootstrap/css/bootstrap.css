@@ -1125,6 +1125,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive_2to1{
+  position:absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  clip: rect(250px 0px 300px 0px);
+}
 .img-rounded {
   border-radius: 6px;
 }
@@ -1928,6 +1935,9 @@ pre code {
   }
   .col-sm-offset-1 {
     margin-left: 8.33333333%;
+  }
+  .col-sm-offset-05 {
+    margin-left: 4%;
   }
   .col-sm-offset-0 {
     margin-left: 0;

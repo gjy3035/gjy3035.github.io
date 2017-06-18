@@ -53,6 +53,7 @@ li a {
   color: #515769;
 }
 
+
 a {
   font-family: Hind, sans-serif;
   color: #81848f;
@@ -1091,8 +1092,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*------------------------------------------------------------------
@@ -1101,6 +1102,8 @@ fieldset[disabled] .btn-theme {
 .full-width {
   width: 100%;
   height: auto;
+  position:absolute;
+  clip:rect(250px 0px 1250px 2000px);
 }
 
 /*--------------------------------------------------
@@ -1456,3 +1459,5 @@ fieldset[disabled] .btn-theme {
     text-align: right;
   }
 }
+
+
