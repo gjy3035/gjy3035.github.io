@@ -28,19 +28,19 @@ title: "高君宇の博客"
 <ul class="pager">
   {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
   <li class="previous">
-    <a href="{{ site.url }}/">
+    <a href="{{ site.url }}/blog/">
       &larr; Older
     </a>
   </li>
   {% else %}
   <li class="previous">
-    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+    <a href="{{ site.url }}/blog/page{{ paginator.previous_page }}">
       &larr; Older
     </a>
   </li>
   {% endif %} {% endif %} {% if paginator.next_page %}
   <li class="next">
-    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+    <a href="{{ site.url }}/blog/page{{ paginator.next_page }}">
       Newer &rarr;
     </a>
   </li>
