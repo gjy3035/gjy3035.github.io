@@ -7,11 +7,11 @@ safe: true
 auto: false 
 
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "blog/age:num"
 
 # presonal config
 domain: gjy3035.github.io/blog
-title: Blog
+title: Junyu Gao's Blog
 description: Computer Vision, Deep Learning...
 author: Henry Gao
 email: gjy3035#gmail.com
