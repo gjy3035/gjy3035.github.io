@@ -1,0 +1,28 @@
+markdown: kramdown
+permalink: /:categories/:title.html
+url: 
+lsi: false
+pygments: true
+safe: true
+auto: false 
+
+paginate: 5
+paginate_path: "blog/page:num"
+
+# presonal config
+domain: gjy3035.github.io/blog
+title: Junyu Gao's Blog - NWPU
+description: Computer Vision, Deep Learning...
+author: Henry Gao
+email: gjy3035#gmail.com
+github: gjy3035
+
+config:
+  js_dir:
+  img_dir:
+  css_dir:
+  
+pygments: true
+safe: true
+auto: true
+highlight: true

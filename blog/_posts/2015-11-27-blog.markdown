@@ -1,0 +1,104 @@
+---
+layout: post
+category: "env"
+title:  "使用jekyll在Github上进行博客搭建"
+tags: [环境配置,其他]
+description:  "使用jekyll在Github上进行博客搭建"
+---
+
+#### 之前在CSDN写了一些博客，发现自己有时写的一些论文笔记，由于包含英文，经常被CSDN长时间处于待审核状态，感觉很不爽，因此一周前转到Github上来。
+
+## 一、Github博客
+
+Github上的博客属于静态页面，也就是无法使用数据库。这为我们实现一些复杂的功能带来了一些不便。还好，Github支持使用jekyll搭建博客，Github能够将本地资源解释成静态页面。这样在搭建完成后，我们只需要关注我们自身的本地资源的更新修改即可。与静态的Html文件编写相较，会方便很多。当然，一些搜索功能和评论功能我们还得借助一些外在的API来实现。
+
+
+## 二、博客搭建过程
+
+### A. 申请GitHub个人博客
+
+和平常新建仓库一样，唯一的区别是，我们新建的项目名称必须和自己的Github账号相同，否则无法生成username.github.io为链接的主页。
+
+1. 新建一个Github repository.
+
+	项目名称为username.github.io
+
+2. 上传项目文件。
+
+	当然，我们还没有搭建自己的博客环境，先把这个坑占住。后续仔细来讲。当项目传上去大概10分钟后，无论失败成功，Github会发送邮件说明项目的情况。当然，也可以直接在项目设置里看到信息。这是成功的信息反馈：
+
+<img src='../imgs/blog1.png' width=80% />
+
+
+
+### B. 搭建静态博客
+
+1. 下载合适的jekyll模板。
+
+	在jekyll的项目wiki下，我们可以下载到很多别人设计好的模板。具体网址是https://github.com/jekyll/jekyll/wiki/Sites 当然，如果时间充裕也可以自己去设计。
+
+	接下来,简要说明一下模板的目录结构。
+
+    _config.yml 博客设置、个人信息等
+    _layouts/   主要页面的布局设置
+    _posts/     博客内容存放
+
+	当然，也有其他js/css/img等文件夹，在此不必赘述。
+
+2. 写博客。
+
+	需要在_posts/文件夹下新建yyyy-mm-dd-name.md文件，或者后缀为markdown等格式都行。这种命名格式jekyll能够自己识别时间以及名称，并根据路由规则自行生成页面。
+
+
+### C. 实现额外功能
+
+1. 实现数据统计、评论功能
+
+	访客统计比较简单，一般CNZZ、百度等都有统计工具。国外的easy counter可以实现历史人数统计。评论功能也有很多，多说、友言都是实现这类功能的。
+
+	实现起来非常简单，只要将计数的网页代码插入到自己想展示的位置即可。
+
+2. 实现博客搜索功能
+
+	由于是静态页面，因此，搜索功能也需要借助于外在的API来实现，或者自行使用js和ajax实现也可以。这里介绍一个简单的使用API的方式完成搜索功能，即Tapir。但使用这种方式，我们首先给自己的博客建立RSS。在一般的模板中都已经提供了这一功能，因此这里不再讨论feed的生成。
+
+	Tapir实际是通过搜索Atom.html中的summary的内容。因此，在atom.xml中summary标签中的内容将决定最终的搜索结果。
+
+	2.1 获取搜索代码
+
+	我们在 http://tapirgo.com/ 中生成自己搜索代码。我们需要填写自己的feed网页和电子邮箱，如下图：
+
+	<div align="center"><img src='../imgs/blog2.png' width=80% /></div>
+
+	点击Go之后，会生成各种代码，我们会得到自己网站的token与secret token。secret自己保存，token使我们要在网页中使用的。
+
+	2.2 添加搜索框
+
+	在网页合适位置，加入搜索代码：
+
+	{% highlight html linenos %}
+		<form action="search.html" accept-charset="utf-8">
+			<div class="input-group">
+	    		<input class="form-control" id="searchbox" type="text" name="query" placeholder="请输入关键字">
+	    		<span class="input-group-btn">
+	    		  <button class="btn btn-default" type="submit">Go!</button>
+	    		</span>
+			</div>
+		</form>
+	{% endhighlight %}
+
+	2.3 创建搜索页面
+
+	目的在于执行搜索请求并返回结果：
+
+	{% highlight html linenos %}
+		<div id="search_results"></div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-tapir.min.js"></script>
+		<script>
+			$('#search_results').tapir({'token': 'your token'});
+		</script>
+	{% endhighlight %}
+
+
+至此，一个基本拥有完整功能的博客就建成了。
