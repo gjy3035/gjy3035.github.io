@@ -2,7 +2,6 @@ markdown: kramdown
 permalink: /:categories/:title.html
 url: 
 lsi: false
-pygments: true
 safe: true
 auto: false 
 
@@ -22,7 +21,4 @@ config:
   img_dir:
   css_dir:
   
-pygments: true
-safe: true
-auto: true
 highlight: true
