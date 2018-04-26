@@ -28,7 +28,7 @@ description: ""
 Estimation (**PR Letters**) [[paper](https://arxiv.org/abs/1707.01202)]
 - Image Crowd Counting Using Convolutional Neural Network and Markov Random Field (arXiv) [[paper](https://arxiv.org/abs/1706.03686)] [[code](https://github.com/hankong/crowd-counting)]
 - Multi-scale Convolution Neural Networks for Crowd Counting (arXiv) [[paper](https://arxiv.org/abs/1702.02359)] [[code](https://github.com/Ling-Bao/mscnn)]
-- 
+
 ### 2016 
 
 - Towards perspective-free object counting with deep learning  (**ECCV2016**) [[paper](http://agamenon.tsc.uah.es/Investigacion/gram/publications/eccv2016-onoro.pdf)] [[code](https://github.com/gramuah/ccnn)]
