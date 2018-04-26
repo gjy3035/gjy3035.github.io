@@ -2,7 +2,7 @@
 layout: post
 title: 2018-04-23-Awesome Crowd Counting
 category: "reading"
-tags: [Code]
+tags: [Code, Paper, List]
 description: ""
 ---
 # Awesome Crowd Counting
