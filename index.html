@@ -1,463 +1,476 @@
-<!DOCTYPE html>
-
-<html lang="en" class="no-js">
-<!-- BEGIN HEAD -->
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="utf-8"/>
     <title>Junyu Gao's Homepage -- NWPU</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="Junyu Gao, 高君宇, 西工大, 西北工业大学, Computer Vision, Deep Learning, Semantic Segmentation" name="description"/>
     <meta name="keywords" content="Junyu Gao, 高君宇, 西工大, 西北工业大学, Computer Vision, Semantic Segmentation, Crowd Analysis">
     <meta content="Junyu Gao" name="author"/>
-    <!-- GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- PAGE LEVEL PLUGIN STYLES -->
-    <link href="css/animate.css" rel="stylesheet">
-    <!-- THEME STYLES -->
-    <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico"/>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+ <link href="css/dashboard.css" rel="stylesheet">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<!-- start menu -->
+  
 </head>
-<!-- END HEAD -->
+<body>
+<!-- header -->
+<div class="col-sm-3 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1>Junyu Gao <br> (高君宇)</h1> 
+			 <img src="images/gjy.png" alt=""/>
+		 </div>
+		<div class="details">
+			 <h3>About Me</h3>
+			 <p style="text-align:justify">Ph.D Candidate, <a href="http://www.nwpu.edu.cn/">NWPU</a>.</p> 	 
+			 <h3>EMAIL</h3>
+			 <p><a href="mailto:gjy3035@gmail.com">gjy3035 [at] gmail [dot] com</a></p>
+			 <h3>Others</h3>
+			 <span><a href="https://github.com/gjy3035">Github</a></span><br>
+			 <span><a href="https://scholar.google.com.hk/citations?user=RiDA3o4AAAAJ">Google Scholar</a></span>
+			 
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!---//pop-up-box---->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+		 <div class="details_header">
+			 <ul>
+				 <li><a href="#aboutme">[About Me]</a></li>
+				 <li><a href="#pub">[Publication]</a></li>
+				 <li><a href="#act">[Activities]</a></li>
+				 <!--<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>-->
+			 </ul>
+		 </div>
+		 <div class="company" id="aboutme">
+			 <h3 class="clr1">About Me</h3>
+			 <div class="company_details" style="max-width:800px;width:100%">
+				 <h4>Northwestern Polytechnical University <span>2011 - PRESENT</span></h4>
+				 <p>B. Eng. -> M. Phil. -> Ph. D. (expected)<p>
+				 <p style="text-align: justify;color:#000000">I am currently pursuing the Ph.D degree from Center for Optical Imagery Analysis and Learning, Northwestern Polytechnical University, advised by <a style="color:#2894FF" href="http://crabwq.github.io/">Qi Wang</a>, Yuan Yuan and <a style="color:#2894FF" href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>. My research interests are in computer vision, deep learning and machine learning.</p>		
+				</div>
+		 </div>
 
-<!-- BODY -->
-<body id="body" data-spy="scroll" data-target=".header">
-
-<style>
-/*********************************
- The list of publication items
- *********************************/
-	/* The list of items */
-	.biblist { }
-	/* The item */
-	.biblist li { }
-	/* You can define custom styles for plstyle field here. */
-	/*************************************
-	 The box that contain BibTeX code
-	 *************************************/
-	div.noshow { display: none; }
-	div.bibtex {
-		margin-right: 0%;
-		margin-top: 1.2em;
-		margin-bottom: 1em;
-		border: 1px solid silver;
-		padding: 0em 1em;
-		background: #ffffee;
+		 <div class="education" id="pub">
+			 <h3 class="clr3">Publication</h3>
+			 <div class="education_details">
+				 <h4>Crowd Analysis</h4>
+				 <h6>Crowd Counting, Localization</h6>
+				 <div class="article">
+					<div class="subsectionImage" >
+						<img src="images/FSC.png" />
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Focus on Semantic Consistency for Cross-Domain Crowd Understanding</p2><br>
+						<p2>T. Han, <b>J. Gao</b>, W. Lin, Y. Yuan, and Q. Wang</p2> <br>
+						<p2 class="subDetails">Proc. International Conference on Acoustic, Speech, and Signal Processing, 2019</p2><br>
+						<p2> 
+							<a class="subP"  href="https://arxiv.org/abs/2002.08623">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'han2020focus')">[Bibtex]</a> | 
+							<a class="subC" href="#">[Code (coming soon)]</a>
+						</p2>
+						<div id="han2020focus" style="display:none">
+						<pre p>
+@INPROCEEDINGS{han2020focus,
+	author={Han,Tao and  Gao, Junyu and Yuan, Yuan and Wang, Qi and},
+	booktitle={Proc. IEEE International Conference on Acoustics, Speech and Signal Processing}, 
+	title={Focus on Semantic Consistency for Cross-Domain Crowd Understanding}, 
+	year={2020},
+	pages={1848-1852}
+}</pre>
+					</div>
+					</div>
+				</div>		
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/GCC.png" />
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Learning from Synthetic Data for Crowd Counting in the Wild</p2><br>
+						<p2>Q. Wang (supervisor), <b>J. Gao</b>, W. Lin, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2019</p2><br>
+						<p2> 
+							<a class="subP" href="https://arxiv.org/abs/1903.03303">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019learning')">[Bibtex]</a> | 
+							<a class="subC" href="https://gjy3035.github.io/GCC-CL/">[Homepage (Dataset/Code)]</a> 
+						</p2>
+						<div id="gao2019learning" style="display:none">
+						<pre p>
+@inproceedings{gao2019learning,
+	title={Learning from Synthetic Data for Crowd Counting in the Wild},
+	author={Wang, Qi and Gao, Junyu and Lin, Wei and Yuan, Yuan},
+	booktitle={Proceedings of IEEE Conference on Computer Vision and Pattern Recognition},
+	pages={8198--8207},
+	year={2019}
 	}
-	div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}
-</style>
-
-<!--========== HEADER ==========-->
-<header class="header navbar-fixed-top">
-    <!-- Navbar -->
-    <nav class="navbar" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="menu-container js_nav-item">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="toggle-icon"></span>
-                </button>
-                <!-- Logo -->
-                <div class="logo">
-                    <a class="logo-wrap" href="#body">
-                        <img class="logo-img logo-img-main" src="img/logo-dark.png" alt="Asentus Logo">
-                        <img class="logo-img logo-img-active" src="img/logo-change.png" alt="Asentus Logo">
-                    </a>
-                </div>
-                <!-- End Logo -->
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse nav-collapse">
-                <div class="menu-container">
-                    <ul class="nav navbar-nav navbar-nav-right">
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">About</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Experience</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#publication">Publication</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#activities">Activities</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-                        <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/blog/index.html">Blog(中文)</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Navbar Collapse -->
-        </div>
-    </nav>
-    <!-- Navbar -->
-</header>
-<!--========== END HEADER ==========-->
-
-<!--========== SLIDER ==========-->
-<div class="promo-block parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/banner.jpg">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div  class="promo-block-divider">
-                    <h1 class="promo-block-title">Junyu Gao</h1>
-                    <h1 class="promo-block-title">高君宇</h1>
-                    <p  class="promo-block-text">Researcher Coder &amp; CVer</p>
-                </div>
-                <ul class="list-inline">
-                    <li><a href="https://www.facebook.com/profile.php?id=100007513128079" class="social-icons"><i class="icon-social-facebook"></i></a></li>
-                    <li><a href="https://github.com/gjy3035" class="social-icons"><i class="icon-social-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/%E5%90%9B%E5%AE%87-%E9%AB%98-a5336ab3/" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!--========== SLIDER ==========-->
-
-<!--========== PAGE LAYOUT ==========-->
-<!-- About -->
-<div id="about">
-    <div class="container content-lg">
-        <div class="row">
-            <div class="col-sm-3 sm-margin-b-30">
-                <div class="text-right sm-text-left">
-                    <h2 class="margin-b-0">Junyu Gao</h2>
-                    <p>What I am all about.</p>
-                </div>
-                <div align="right">
-                <img width="55%" border="0" src="img/head.png">
-                </div>
-            </div>
-            
-            <div class="col-sm-8 col-sm-offset-1">
-                <div class="margin-b-60">
-                    <p style="font-size: 20px; color: #000000;">I am currently pursuing the Ph.D degree from Center for Optical Imagery Analysis and Learning, Northwestern Polytechnical University, advised by <a href="http://crabwq.github.io/">Qi Wang</a>, Yuan Yuan and <a href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>. My research interests are in computer vision, deep learning and machine learning. </p>
-		            <p style="font-size: 20px; color: #000000;"> According to my plan, I will get a Ph.D. in December 2020 and plan to find a postdoctoral position. If you have a proper job, please send e-mail to me. Thanks a lot! </p>
-                </div>
-
-                <!-- Progress Box -->
-                <div class="progress-box">
-                    <h5>Python <span class="color-heading pull-right">95%</span></h5>
-                    <div class="progress">
-                        <div class="progress-bar bg-color-base" role="progressbar" data-width="95"></div>
-                    </div>
-                </div>			    
-                <div class="progress-box">
-                    <h5>Matlab <span class="color-heading pull-right">80%</span></h5>
-                    <div class="progress">
-                        <div class="progress-bar bg-color-base" role="progressbar" data-width="80"></div>
-                    </div>
-                </div>
-                <div class="progress-box">
-                    <h5>C/C++ <span class="color-heading pull-right">70%</span></h5>
-                    <div class="progress">
-                        <div class="progress-bar bg-color-base" role="progressbar" data-width="70"></div>
-                    </div>
-                </div>
-                <!-- End Progress Box -->
-            </div>
-        </div>
-        <!--// end row -->
-    </div>
-</div>
-<!-- End About -->
-        
-        
-<!-- Experience -->
-<div id="experience">
-    <div class="bg-color-sky-light" data-auto-height="true">
-        <div class="container content-lg">
-            <div class="row">
-                <div class="col-sm-3 sm-margin-b-30">
-                    <div class="text-right sm-text-left">
-                        <h2 class="margin-b-0">Experience</h2>
-                    </div>
-                </div>
-                <div class="col-sm-8 col-sm-offset-1">
-                <p style="font-size: 20px; color: #000000;">I received my B.Sc. degree in Computer Science and Technology in 2015.</p>
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-</div>
-<!-- End Experience -->
-        
-<!--========== PAGE LAYOUT ==========-->
-<!-- About -->
-<div id="publication">
-    <div class="container content-lg">
-        <div class="row">
-            <div class="col-sm-3 sm-margin-b-30">
-                <div class="text-right sm-text-left">
-                    <h2 class="margin-b-0">Publication</h2>
-                </div>
-            </div>
-            
-            <div class="col-sm-8 col-sm-offset-05">
-                <div class="margin-b-60">
-
-<!-- Conference Papers -->                
-	<h2 style="text-align:left; font-size: 16pt;">Conference Papers</h2>
-	<ol>	
-	<li style="text-align:justify;">Q. Wang, <b>J. Gao</b>, W. Lin, and Y. Yuan, “Learning from Synthetic Data for Crowd Counting in the Wild,” <i>Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2019. 
-    <a href="javascript:toggleBibtex('gao2019conf_learning')">[BibTeX]</a><a href='pdf/CC_Wild_0308_cvpr2019.pdf'>[PDF (High resolution)]</a>
-    <a style="color:#FF0000" href='https://gjy3035.github.io/GCC-CL/'>[Project/Code/Dataset]</a><div id="bib_gao2019conf_learning" class="bibtex noshow">
-<pre>@inproceedings{gao2019conf_learning,
-  title={Learning from Synthetic Data for Crowd Counting in the Wild},
-  author={Wang, Qi and Gao, Junyu and Lin, Wei and Yuan, Yuan},
-  booktitle={Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2019}
+					</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/PCC.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">PCC Net: Perspective Crowd Counting via Spatial Convolutional Network</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and X. Li</p2> <br>
+						<p2 class="subDetails">IEEE Transactions on Circuits and Systems for Video Technology, 2019</p2><br>
+						<p2 > <a class="subP" href="https://arxiv.org/abs/1905.10085">[Paper]</a> | <a href="###" onclick="openShutManager(this,'gao2019pcc')">[Bibtex]</a> | </p2> 
+						<p2> <a class="subC" href="https://github.com/gjy3035/PCC-Net">[Code]</a></p2>
+						<div id="gao2019pcc" style="display:none">
+						<pre p></pre>
+					</div>
+					</div>
+				</div>				
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/scar.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">SCAR: Spatial-/Channel-wise Attention Regression Networks for Crowd Counting</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">Neurocomputing, 2019</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1908.03716">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019scar')">[Bibtex]</a> | 
+							<a class="subC" href="https://github.com/gjy3035/SCAR">[Code]</a>
+						</p2>
+						<div id="gao2019scar" style="display:none">
+						<pre p>
+@article{gao2019scar,
+	title={SCAR: Spatial-/channel-wise attention regression networks for crowd counting},
+	author={Gao, Junyu and Wang, Qi and Yuan, Yuan},
+	journal={Neurocomputing},
+	volume={363},
+	pages={1--8},
+	year={2019}
+	}</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">	
+				  <br>
+				  <h4>Semantic Segmentation<span></span></h4>
+				  <h6>Street Scene Labeling, Road Segmentation, Lane Segmentation</h6>
+				 </div>
+				 <div class="article">
+					<div class="subsectionImage" >
+						<img src="images/wsal.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Weakly Supervised Adversarial Domain Adaptation for Semantic Segmentation in Urban Scenes</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and X. Li</p2> <br>
+						<p2 class="subDetails">IEEE Transactions on Image Processing, 2019</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1908.03716">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019weakly')">[Bibtex]</a> | 
+							<a class="subC" href="https://github.com/gjy3035/WSAL_released">[Code]</a>
+						</p2>
+						<div id="gao2019weakly" style="display:none">
+						<pre p>
+@ARTICLE{gao2019weakly, 
+	author={Wang, Qi and Gao, Junyu and Li, Xuelong}, 
+	journal={IEEE Transactions on Image Processing}, 
+	title={Weakly Supervised Adversarial Domain Adaptation for Semantic Segmentation in Urban Scenes}, 
+	year={2019}, 
+	volume={28}, 
+	number={9}, 
+	pages={4376-4386}, 
+	}</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/road.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Embedding Structured Contour and Location Prior in Siamesed Fully Convolutional Networks  for Road Detection</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">Proc. IEEE International Conference on Robotics and Automation, 2017</p2><br>
+						<p2 class="subDetails">IEEE Transactions on Intelligent Transportation Systems, 2018</p2><br>
+						<p2> 
+							<a  class="subP" href="http://gjy3035.github.io/pdf/road_detection_icra2017.pdf">[Conferencr Paper]</a> <a  class="subP" href="https://arxiv.org/abs/1905.01575"> [Journal Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2017embedding')">[Bibtex]</a>
+						</p2>
+						<div id="gao2017embedding" style="display:none">
+						<pre p>
+@inproceedings{gao2017embedding,
+	title={Embedding structured contour and location prior in siamesed fully convolutional networks for road detection},
+	author={Gao, Junyu and Wang, Qi and Yuan, Yuan},
+	booktitle={Robotics and Automation (ICRA), 2017 IEEE International Conference on},
+	pages={219--224},
+	year={2017}
+	}
+@ARTICLE{gao2018journal_embedding, 
+	author={Wang, Qi and Gao, Junyu and Yuan. Yuan}, 
+	journal={IEEE Transactions on Intelligent Transportation Systems}, 
+	title={Embedding Structured Contour and Location Prior in Siamesed Fully Convolutional Networks for Road Detection}, 
+	year={2018}, 
+	volume={19}, 
+	number={1}, 
+	pages={230-241}
+	}</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/joint.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">A Joint Convolutional Neural Networks and Context Transfer for Street Scenes Labeling</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">IEEE Transactions on Intelligent Transportation Systems, 2018</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1905.01574">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2018joint')">[Bibtex]</a> 		
+						</p2>
+						<div id="gao2018joint" style="display:none">
+						<pre p>
+@ARTICLE{gao2018joint, 
+	author={Wang, Qi and Gao, Junyu and Yuan. Yuan}, 
+	journal={IEEE Transactions on Intelligent Transportation Systems}, 
+	title={A Joint Convolutional Neural Networks and Context Transfer for Street Scenes Labeling}, 
+	year={2018}, 
+	volume={19}, 
+	number={5}, 
+	pages={1457-1470}
+	}</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<br>
+					<h4>Super-Resolution<span></span></h4>
+					<h6>Super-Resolution</h6>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/SPSR.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Pixel-Level Self-Paced Learning for Super-Resolution</p2><br>
+						<p2>W. Lin, <b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">Proc. International Conference on Acoustic, Speech, and Signal Processing, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2003.03113">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'lin2020pixel')">[Bibtex] </a> | 
+							<a class="subC" href="https://github.com/Elin24/PSPL">[Code]</a>		
+						</p2>
+						<div id="lin2020pixel" style="display:none">
+						<pre p>
+@INPROCEEDINGS{lin2020pixel,
+	author={Lin, Wei and Gao, Junyu and  Wang, Qi and Li Xuelong},
+	booktitle={Proc. IEEE International Conference on Acoustics, Speech and Signal Processing}, 
+	title={Pixel-Level Self-Paced Learning For Super-Resolution}, 
+	year={2020},
+	pages={2538-2542}
 }</pre>
-	</div>								
-    </li>
-    <li style="text-align:justify;"><b>J. Gao</b>, Q. Wang, and Y. Yuan, “Embedding Structured Contour and Location Prior in Siamesed Fully Convolutional Networks for Road Detection,” <i>Proc. IEEE International Conference on Robotics and Automation (ICRA)</i>, pp. 219-224, 2017. 
-    <a href="javascript:toggleBibtex('gao2017conf_embedding')">[BibTeX]</a><a href='pdf/road_detection_icra2017.pdf'>[PDF]</a>
-	<div id="bib_gao2017conf_embedding" class="bibtex noshow">
-<pre>@inproceedings{gao2017conf_embedding,
-title={Embedding structured contour and location prior in siamesed fully convolutional networks for road detection},
-author={Gao, Junyu and Wang, Qi and Yuan, Yuan},
-booktitle={Robotics and Automation (ICRA), 2017 IEEE International Conference on},
-pages={219--224},
-year={2017},
-organization={IEEE}
-}</pre>
-	</div>
-    </li>
-	</ol>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<br>
+					<h4>ArXiv<span></span></h4>
+					<h6>Pre-print, Technical Report</h6>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/nlt.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Neuron Linear Transformation: Modeling the Domain Shift for Crowd Counting</p2><br>
+						<p2>Q. Wang, T. Han, <b>J. Gao</b>, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:2004.02133, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2004.02133">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'han2020nlt')">[Bibtex] </a> | 
+							<a class="subC" href="#">[Code (coming soon)]</a>		
+						</p2>
+						<div id="han2020nlt" style="display:none">
+						<pre p>
+</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/survey.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">CNN-based Density Estimation and Crowd Counting: A Survey</p2><br>
+						<p2>G. Gao, <b>J. Gao</b>, Q. Liu, Q. Wang, and Y. Wang</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:2003.12783, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2003.12783">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2020cnn')">[Bibtex] </a> | 
+							<a class="subC" href="https://github.com/gaoguangshuai/survey-for-crowd-counting">[Homepage (Code/Materials)]</a>		
+						</p2>
+						<div id="gao2020cnn" style="display:none">
+						<pre p>
+</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/nwpu.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">NWPU-Crowd: A Large-Scale Benchmark for Crowd Counting and Localization</p2><br>
+						<p2>Q. Wang (supervisor), <b>J. Gao</b>, W. Lin, and X. Li</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:2001.03360, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2001.03360">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2020nwpu')">[Bibtex] </a> | 
+							<a class="subC" href="https://gjy3035.github.io/NWPU-Crowd-Sample-Code/">[Homepage (Dataset/Code/Benchmark)]</a>		
+						</p2>
+						<div id="gao2020nwpu" style="display:none">
+						<pre p>
+@article{gao2020nwpu,
+	title={NWPU-Crowd: A Large-Scale Benchmark for Crowd Counting and Localization},
+	author={Wang, Qi and Gao, Junyu and Lin, Wei and Li, Xuelong},
+	journal={arXiv preprint arXiv:2001.03360},
+	year={2020}
+	}</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/DACC.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Domain-adaptive Crowd Counting via Inter-domain Features Segregation and Gaussian-prior Reconstruction</p2><br>
+						<p2><b>J. Gao</b>, T. Han,  Q. Wang,  and Y. Yuan</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:1912.03677, 2019</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1912.03677">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019dacc')">[Bibtex] </a> | 
+							<a class="subC" href="#">[Code (coming soon)]</a>		
+						</p2>
+						<div id="gao2019dacc" style="display:none">
+						<pre p>
+</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/fa.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Feature-aware Adaptation and Structured Density Alignment for Crowd Counting in Video Surveillance</p2><br>
+						<p2><b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:1912.03672, 2019</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1912.03672">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019fa')">[Bibtex] </a> 	
+						</p2>
+						<div id="gao2019fa" style="display:none">
+						<pre p>
+</pre>
+					</div>
+					</div>
+				</div>
+				<div class="article">
+					<div class="subsectionImage" >
+						<img src="images/c3f.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">C^3 Framework: An Open-source PyTorch Code for Crowd Counting</p2><br>
+						<p2><b>J. Gao</b>, W. Lin, B. Zhao, D. Wang, C. Gao, and J. Wen</p2> <br>
+						<p2 class="subDetails">arXiv preprint arXiv:1907.02724, 2019</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/1907.02724">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'gao2019c')">[Bibtex] </a> | 
+							<a class="subC" href="https://github.com/gjy3035/C-3-Framework">[Code]</a>	
+						</p2>
+						<div id="gao2019c" style="display:none">
+						<pre p>
+@article{gao2019c,
+	title={C$^3$ Framework: An Open-source PyTorch Code for Crowd Counting},
+	author={Gao, Junyu and Lin, Wei and Zhao, Bin and Wang, Dong and Gao, Chenyu and Wen, Jun},
+	journal={arXiv preprint arXiv:1907.02724},
+	year={2019}
+	}</pre>
+					</div>
+					</div>
+				</div>
+			</div>
 
-<!-- Journal Papers -->   
-	<h2 style="text-align:left; font-size: 16pt;">Journal Papers</h2>
-	<ol>
-    <li style="text-align:justify;"><b>J. Gao</b>, Q. Wang, and Y. Yuan, “SCAR: Spatial-/Channel-wise Attention Regression Networks for Crowd Counting,” <i>Neurocomputing</i>, vol. 363, pp. 1-8, 2019. 
-    <a href="javascript:toggleBibtex('gao2019scar')">[BibTeX]</a><a href='https://arxiv.org/pdf/1908.03716'>[PDF]</a>
-    <a style="color:#FF0000" href='https://github.com/gjy3035/SCAR'>[Code]</a>
-<div id="bib_gao2019scar" class="bibtex noshow">
-<pre>@article{gao2019scar,
-  title={SCAR: Spatial-/channel-wise attention regression networks for crowd counting},
-  author={Gao, Junyu and Wang, Qi and Yuan, Yuan},
-  journal={Neurocomputing},
-  volume={363},
-  pages={1--8},
-  year={2019},
-  publisher={Elsevier}
-}</pre></div>
-    </li>
-    <li style="text-align:justify;"><b>J. Gao</b>, Q. Wang, and Y. Yuan, “Convolutional Regression Network for Multi-Oriented Text Detection,” <i>IEEE Access</i>, vol. 7, pp. 96424-96433, 2019. 
-    <a href="javascript:toggleBibtex('gao2019crn')">[BibTeX]</a><a href='https://ieeexplore.ieee.org/abstract/document/8766103/'>[PDF]</a>
-<div id="bib_gao2019crn" class="bibtex noshow">
-<pre>@ARTICLE{gao2019crn, 
-author={Gao, Junyu and Wang, Qi and Yuan, Yuan}, 
-journal={IEEE Access}, 
-title={Convolutional Regression Network for Multi-Oriented Text Detection}, 
-year={2019}, 
-volume={7}, 
-pages={96424-96433}, 
-}</pre></div>
-    </li>
-	<li style="text-align:justify;"><b>J. Gao</b>, Q. Wang, and X. Li, “PCC Net: Perspective Crowd Counting via Spatial Convolutional Network,” <i>IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)</i>, accepted, 2019. 
-	<a href="javascript:toggleBibtex('gao2019pcc')">[BibTeX]</a><a href='https://arxiv.org/abs/1905.10085'>[PDF]</a>
-    <a style="color:#FF0000" href='https://github.com/gjy3035/PCC-Net'>[Code]</a>
-    </li>					
-	<li style="text-align:justify;">Q. Wang, <b>J. Gao</b>, and X. Li, “Weakly Supervised Adversarial Domain Adaptation for Semantic Segmentation in Urban Scenes,” <i>IEEE Transactions on Image Processing (T-IP)</i>, vol. 28, no. 9, pp. 4376-4386, 2019. 
-	<a href="javascript:toggleBibtex('gao2019weakly')">[BibTeX]</a><a href='https://arxiv.org/abs/1904.09092'>[PDF]</a>
-    <a style="color:#FF0000" href='https://github.com/gjy3035/WSAL_released'>[Code]</a>
-<div id="bib_gao2019weakly" class="bibtex noshow">
-<pre>@ARTICLE{gao2019weakly, 
-author={Wang, Qi and Gao, Junyu and Li, Xuelong}, 
-journal={IEEE Transactions on Image Processing}, 
-title={Weakly Supervised Adversarial Domain Adaptation for Semantic Segmentation in Urban Scenes}, 
-year={2019}, 
-volume={28}, 
-number={9}, 
-pages={4376-4386}, 
-}</pre></div>
-    </li>			
-	<li style="text-align:justify;">Q. Wang, <b>J. Gao</b>, and Y. Yuan, “Embedding Structured Contour and Location Prior in Siamesed Fully Convolutional Networks for Road Detection,” <i>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</i>,  vol. 19, no. 1, pp. 230-241, 2018. 
-    <a href="javascript:toggleBibtex('gao2018journal_embedding')">[BibTeX]</a><a href='pdf/road_detection_its2017.pdf'>[PDF]</a>
-<div id="bib_gao2018journal_embedding" class="bibtex noshow">
-<pre>@ARTICLE{gao2018journal_embedding, 
-author={Wang, Qi and Gao, Junyu and Yuan. Yuan}, 
-journal={IEEE Transactions on Intelligent Transportation Systems}, 
-title={Embedding Structured Contour and Location Prior in Siamesed Fully Convolutional Networks for Road Detection}, 
-year={2018}, 
-volume={19}, 
-number={1}, 
-pages={230-241}
-}</pre>
-</div>								
-</li>
-<li style="text-align:justify;">Q. Wang, <b>J. Gao</b>, and Y. Yuan, “A Joint Convolutional Neural Networks and Context Transfer for Street Scenes Labeling,” <i>IEEE Transactions on Intelligent Transportation Systems (T-ITS)</i>, vol. 19, no. 5, pp. 1457-1470, 2018. 
-	<a href="javascript:toggleBibtex('gao2018jounal_joint')">[BibTeX]</a><a href='pdf/scene_labeling_its2017.pdf'>[PDF]</a>
-<div id="bib_gao2018jounal_joint" class="bibtex noshow">
-<pre>@ARTICLE{gao2018jounal_joint, 
-author={Wang, Qi and Gao, Junyu and Yuan. Yuan}, 
-journal={IEEE Transactions on Intelligent Transportation Systems}, 
-title={A Joint Convolutional Neural Networks and Context Transfer for Street Scenes Labeling}, 
-year={2018}, 
-volume={19}, 
-number={5}, 
-pages={1457-1470}
-}</pre></div>								
-</ol>
+			
+		 <div class="skills" id="act">
+			<h3 class="clr2">Professional Activities</h3>
+			<!--<div class="skill_info">
+			<p>Duis egestas tortor metus, vitae venenatis tortor tristique at. Pellentesque dignissim purus vitae enim blandit, sed tristique enim malesuada. Maecenas dolor erat,
+			volutpat a tellus eu, euismod iaculis urna. Nulla dui purus, viverra viverra dolor non, malesuada dictum purus.</p>
+			</div> -->
+			<div class="skill_list">
+				<div class="skill1">
+					<h4>Program Committee Member</h4>
+					<ul>					 
+					   <li>ITSC2018</li>
+					   <li>ICEEAC2017</li>
+					   <li>MSEE2016</li>
+					</ul>
+				</div>
+				<div class="skill2">
+					<h4>Regular Reviewer</h4>
+					<ul>					 
+					   <li>CVPR, BMVC</li>
+					   <li>IEEE T-ITS, T-CSVT, T-CYB, T-NNLS</li>
+					   <li>IEEE GRSL</li>
+					   <li>PR, Neurocomputing</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
 
-
-
-<h2 style="text-align:left; font-size: 16pt;">Arxiv Papers/Technical Reports</h2>
-
-<ol>
-<li style="text-align:justify;"><b>J. Gao</b>, T. Han, Q. Wang, and Y. Yuan, “Domain-adaptive Crowd Counting via Inter-domain Features Segregation and Gaussian-prior Reconstruction,” <i>arXiv preprint arXiv:1912.03677</i>, 2019. 
-    <a href="javascript:toggleBibtex('gao2019c')">[BibTeX]</a><a href='https://arxiv.org/abs/1912.03677'>[PDF]</a>
-    <div id="bib_gao2019c" class="bibtex noshow">
-<pre>@@article{gao2019domain,
-  title={Domain-adaptive Crowd Counting via Inter-domain Features Segregation and Gaussian-prior Reconstruction},
-  author={Gao, Junyu and Han, Tao and Wang, Qi and Yuan, Yuan},
-  journal={arXiv preprint arXiv:1912.03677},
-  year={2019}
-}</pre></div>
-</li>  
-<li style="text-align:justify;"><b>J. Gao</b>, Q. Wang, and Y. Yuan, “Feature-aware Adaptation and Structured Density Alignment for Crowd Counting in Video Surveillance,” <i>arXiv preprint arXiv:1912.03672</i>, 2019. 
-    <a href="javascript:toggleBibtex('gao2019c')">[BibTeX]</a><a href='https://arxiv.org/abs/1912.03672'>[PDF]</a>
-    <div id="bib_gao2019c" class="bibtex noshow">
-<pre>@article{gao2019feature,
-  title={Feature-aware Adaptation and Structured Density Alignment for Crowd Counting in Video Surveillance},
-  author={Gao, Junyu and Wang, Qi and Yuan, Yuan},
-  journal={arXiv preprint arXiv:1912.03672},
-  year={2019}
-}</pre></div>
-</li>  
-<li style="text-align:justify;"><b>J. Gao</b>, W. Lin, B. Zhao, D. Wang, C. Gao, and J. Wen, “C^3 Framework: An Open-source PyTorch Code for Crowd Counting,” <i>arXiv preprint arXiv:1907.02724</i>, 2019. 
-    <a href="javascript:toggleBibtex('gao2019c')">[BibTeX]</a><a href='https://arxiv.org/abs/1907.02724'>[PDF]</a>
-    <a style="color:#FF0000" href='https://github.com/gjy3035/C-3-Framework'>[Code]</a>
-    <div id="bib_gao2019c" class="bibtex noshow">
-<pre>@article{gao2019c,
-  title={C$^3$ Framework: An Open-source PyTorch Code for Crowd Counting},
-  author={Gao, Junyu and Lin, Wei and Zhao, Bin and Wang, Dong and Gao, Chenyu and Wen, Jun},
-  journal={arXiv preprint arXiv:1907.02724},
-  year={2019}
-}</pre></div>
-</li>                               
-</ol>
-
-
-				
-                            
-    </div></div></div>
-    <!--// end row -->
-    </div>
+		 <div class="copywrite">
+			 <p>Update: 2020.5 by Junyu Gao</p>
+		 </div>
+	 </div>
 </div>
-<!-- End About -->
+<!---->
 
-<!-- Experience -->
-<div id="activities">
-    <div class="bg-color-sky-light" data-auto-height="true">
-        <div class="container content-lg">
-            <div class="row">
-                <div class="col-sm-3 sm-margin-b-30">
-                    <div class="text-right sm-text-left">
-                        <h2 class="margin-b-0">Professional <br>Activities</h2>
-                    </div>
-                </div>
-                <div class="col-sm-8 col-sm-offset-1">
-                 <div class="margin-b-20">
-		<h2 style="text-align:left; font-size: 16pt;">Program Committee Member</h2>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px"><a href="https://www.ieee-itsc2018.org/">ITSC2018</a></p>
-		 <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px"><a href="http://www.iceeac2017.org/">ICEEAC2017</a></p>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px"><a href="http://www.msee2016.org/">MSEE2016</a></p>
-                     </div>
-                 <div class="margin-b-60">
-					 <h2 style="text-align:left; font-size: 16pt;">Regular Reviewer</h2>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px">IEEE Transactions on Intelligent Transportation Systems</p>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px">IEEE Transactions on Systems, Man and Cybernetics: Systems</p>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px">IEEE Geoscience and Remote Sensing Letters</p>
-                     <p style="text-align:left; font-size: 12pt;text-indent: 1em; margin-bottom:5px">Neurocomputing</p>
-                     </div>
-                </div>                        
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-</div>
-<!-- End Experience -->
-    
-<!-- Contact -->
-<div id="contact">
-    <div class="bg-color-sky-light">
-        <div class="container content-lg">
-            <div class="row">
-                <div class="col-sm-3 sm-margin-b-30">
-                    <div class="text-right sm-text-left">
-                        <h2 class="margin-b-0">Contacts</h2>
-                    </div>
-                </div>
-                <div class="col-sm-8 col-sm-offset-1">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h5>Address</h5>
-                            <a href="#">127 West Youyi Road Xi’an Shaanxi, P.R.China</a>
-                        </div>
-                        <!--<div class="col-md-3 col-xs-6 md-margin-b-30">
-                            <h5>Phone</h5>
-                            <a href="#">+77 234 548 00 00</a>
-                        </div>-->
-                        <div class="col-md-3 col-xs-6">
-                            <h5>Email</h5>
-                            <a href="mailto:gjy3035@gmail.com">gjy3035 at gmail dot com</a>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <h5>Website</h5>
-                            <a href="#">gjy3035.github.io</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-    </div>
-</div>
-<!-- End Contact -->
-<!--========== END PAGE LAYOUT ==========-->
-
-<!--========== FOOTER ==========-->
-<footer class="footer">
-    <div class="content container">
-        <div class="row">
-            <div class="col-xs-6">
-                <img class="footer-logo" src="img/logo-change.png">
-            </div>
-            <div>
-				<a href="https://clustrmaps.com/site/19n47"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=DXJClj25POp8TRcRFeGbz4kE_xQe8UkC47LIaBcLtRo&cl=ffffff" /></a>
-                </div>
-        </div>
-        <!--// end row -->
-    </div>
-</footer>
-<!--========== END FOOTER ==========-->
-
-<!-- Back To Top -->
-<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-
-<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-<!-- CORE PLUGINS -->
-<script src="vendor/jquery.min.js" type="text/javascript"></script>
-<script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-<!-- PAGE LEVEL PLUGINS -->
-<script src="vendor/jquery.easing.js" type="text/javascript"></script>
-<script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-<script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-<script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-<script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
-<script src="vendor/jquery.appear.js" type="text/javascript"></script>
-<script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-<script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-
-<!-- PAGE LEVEL SCRIPTS -->
-<script src="js/layout.min.js" type="text/javascript"></script>
-<script src="js/components/progress-bar.min.js" type="text/javascript"></script>
-<script src="js/components/masonry.min.js" type="text/javascript"></script>
-<script src="js/components/wow.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-    <!--
     // Toggle Display of BibTeX
     function toggleBibtex(articleid) {
         var bib = document.getElementById('bib_'+articleid);
@@ -469,8 +482,26 @@ pages={1457-1470}
             return;
         }
     }
--->
 </script>
+<script type="text/javascript">   
+	function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){  
+	var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;  
+	var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;  
+	var openTip = oOpenTip || "";  
+	var shutTip = oShutTip || "";  
+	if(targetObj.style.display!="none"){  
+	   if(shutAble) return;  
+	   targetObj.style.display="none";  
+	   if(openTip  &&  shutTip){  
+		sourceObj.innerHTML = shutTip;   
+	   }  
+	} else {  
+	   targetObj.style.display="block";  
+	   if(openTip  &&  shutTip){  
+		sourceObj.innerHTML = openTip;   
+	   }  
+	}  
+	}  
+	</script>
 </body>
-<!-- END BODY -->
 </html>
