@@ -217,6 +217,7 @@ address span{
   background: #999;
   color: #FFF;
   padding: 5px 190px 5px 30px;
+  margin-top: 20px;
   display: inline-block;
 }
 h3.clr1{
@@ -227,6 +228,9 @@ h3.clr2{
 }
 h3.clr3{
 	background:#3eb991;
+}
+h3.clr4{
+	background:#6ecadc;
 }
 .copywrite{
 	padding-left:2em;

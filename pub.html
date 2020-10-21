@@ -7,11 +7,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Junyu Gao's Homepage -- NWPU</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="Junyu Gao, 高君宇, 西工大, 西北工业大学, Computer Vision, Deep Learning, Semantic Segmentation" name="description"/>
-    <meta name="keywords" content="Junyu Gao, 高君宇, 西工大, 西北工业大学, Computer Vision, Semantic Segmentation, Crowd Analysis">
-    <meta content="Junyu Gao" name="author"/>
+    <title>Junyu Gao's Publication</title>
+
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -30,19 +27,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 <!-- header -->
-<div class="col-sm-3 col-md-2 sidebar">
+<div class="col-sm-5 col-md-2 sidebar">
 		 <div class="sidebar_top">
-			 <h1>Junyu Gao <br> (高君宇)</h1> 
-			 <img src="images/gjy.png" alt=""/>
+			 <h1>Publication</h1> 
 		 </div>
 		<div class="details">
-			 <h3>About Me</h3>
-			 <p style="text-align:justify">Ph.D Candidate, <a href="http://www.nwpu.edu.cn/">NWPU</a>.</p> 	 
-			 <h3>EMAIL</h3>
-			 <p><a href="mailto:gjy3035@gmail.com">gjy3035 [at] gmail [dot] com</a></p>
-			 <h3>Others</h3>
-			 <span><a href="https://github.com/gjy3035">Github</a></span><br>
-			 <span><a href="https://scholar.google.com.hk/citations?user=RiDA3o4AAAAJ">Google Scholar</a></span>
+			 <h4><a href='#crowd'>Crowd Analysis</a></h4>
+			 <span>Crowd Counting, Crwd Segmentation, Crowd Localization</span><br>
+			 <br> 	 
+			 <h4><a href='#seg'>Semantic Segmentation</a></h4>
+			 <span>Street Scene Labeling, Road Segmentation</span><br>
+			 <br>
+			 <h4><a href='#cls'>Imgae Classification</a></h4>
+			 <span>Unsupervised, Weakly-supervised Learning</span><br>
+			 <br>
+			 <h4><a href='#img'>Image Enahncement</a></h4>
+			 <span>Super-Resolution, Image Synthesis</span><br>
+			 <br>
+			 <h4><a href='#arxiv'>ArXiv</a></h4>
+			 <span>Pre-print, Technical Report</span><br>
+			 <br>
+
 			 
 		</div>
 		<div class="clearfix"></div>
@@ -53,26 +58,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!---//pop-up-box---->			
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 	 <div class="content">
-		 <div class="details_header">
-			 <ul>
-				 <li><a href="#aboutme">[About Me]</a></li>
-				 <li><a href="#pub">[Publication]</a></li>
-				 <li><a href="#act">[Activities]</a></li>
-			 </ul>
-		 </div>
-		 <div class="company" id="aboutme">
-			 <h3 class="clr1">About Me</h3>
-			 <div class="company_details" style="max-width:800px;width:100%">
-				 <h4>Northwestern Polytechnical University <span>2011 - PRESENT</span></h4>
-				 <p>B. Eng. -> M. Phil. -> Ph. D. (expected)<p>
-				 <p style="text-align: justify;color:#000000">I am currently pursuing the Ph.D degree from Center for Optical Imagery Analysis and Learning, Northwestern Polytechnical University, advised by <a style="color:#2894FF" href="http://crabwq.github.io/">Qi Wang</a>, Yuan Yuan and <a style="color:#2894FF" href="https://scholar.google.com/citations?user=ahUibskAAAAJ">Xuelong Li</a>. My research interests are in computer vision, deep learning and machine learning.</p>		
-				</div>
-		 </div>
-
-		 <div class="education" id="pub">
-			 <h3 class="clr3">Publication</h3>
+		 <div class="education" id="crowd">
+			 <h3 class="clr4">Crowd Analysis</h3>
 			 <div class="education_details">
-				 <h4>Crowd Analysis</h4>
 				 <h6>Crowd Counting, Localization</h6>
 				 <div class="article">
 					<div class="subsectionImage" >
@@ -187,7 +175,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<p2 > <a class="subP" href="https://arxiv.org/abs/1905.10085">[Paper]</a> | <a href="###" onclick="openShutManager(this,'gao2019pcc')">[Bibtex]</a> | </p2> 
 						<p2> <a class="subC" href="https://github.com/gjy3035/PCC-Net">[Code]</a></p2>
 						<div id="gao2019pcc" style="display:none">
-						<pre p></pre>
+						<pre p>
+@ARTICLE{gao2020pcc, 
+	author={Gao, Junyu and Wang, Qi and Li, Xuelong}, 
+	journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+	title={PCC Net: Perspective Crowd Counting via Spatial Convolutional Network}, 
+	year={2020}, 
+	volume={30}, 
+	number={10}, 
+	pages={3486-3498}, 
+	}</pre>							
+						</pre>
 					</div>
 					</div>
 				</div>				
@@ -217,11 +215,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					</div>
 				</div>
-				<div class="article">	
-				  <br>
-				  <h4>Semantic Segmentation<span></span></h4>
-				  <h6>Street Scene Labeling, Road Segmentation, Lane Segmentation</h6>
-				 </div>
+			 </div>
+		 </div>
+		 <div class="education" id="seg">
+			<h3 class="clr4">Semantic Segmentation</h3>
+			<div class="education_details">
+				<h6>Street Scene Labeling, Road Segmentation, Lane Segmentation</h6>
 				 <div class="article">
 					<div class="subsectionImage" >
 						<img src="images/wsal.png"/>
@@ -309,11 +308,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					</div>
 				</div>
+			</div>
+		 </div>
+		 <div class="education" id="cls">
+			<h3 class="clr4">Image Classification</h3>
+			<div class="education_details">
+				<h6>Super-Resolution, Image Synthesis</h6>
 				<div class="article">
-					<br>
-					<h4>Super-Resolution<span></span></h4>
-					<h6>Super-Resolution</h6>
+					<div class="subsectionImage" >
+						<img src="images/USADTM.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Unsupervised Semantic Aggregation and Deformable Template Matching for Semi-Supervised Learning</p2><br>
+						<p2>T. Han, <b>J. Gao</b>, Y. Yuan, and Q. Wang</p2> (Co-first Author)<br> 
+						<p2 class="subDetails">Proc. Conference on Neural Information Processing Systems, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2010.05517">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'han2020unsupervised')">[Bibtex]</a> | 
+							<a class="subC" href="https://github.com/taohan10200/USADTM">[Code]</a>		
+						</p2>
+						<div id="han2020unsupervised" style="display:none">
+						<pre p>
+</pre>
+					</div>
+					</div>
 				</div>
+			</div>
+		 </div>
+		 <div class="education" id="img">
+			<h3 class="clr4">Image Enchancement</h3>
+			<div class="education_details">
+				<h6>Super-Resolution, Image Synthesis</h6>
 				<div class="article">
 					<div class="subsectionImage" >
 						<img src="images/SPSR.png"/>
@@ -339,11 +364,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					</div>
 				</div>
+			</div>
+		 </div>
+
+		 <div class="education" id="img">
+			<h3 class="clr4">Image Enchancement</h3>
+			<div class="education_details">
+				<h6>Super-Resolution, Image Synthesis</h6>
 				<div class="article">
-					<br>
-					<h4>ArXiv<span></span></h4>
-					<h6>Pre-print, Technical Report</h6>
+					<div class="subsectionImage" >
+						<img src="images/SPSR.png"/>
+					</div>
+					<div class="subsectionContent">
+						<p2 class="subTitles">Pixel-Level Self-Paced Learning for Super-Resolution</p2><br>
+						<p2>W. Lin, <b>J. Gao</b>, Q. Wang, and Y. Yuan</p2> <br>
+						<p2 class="subDetails">Proc. International Conference on Acoustic, Speech, and Signal Processing, 2020</p2><br>
+						<p2> 
+							<a  class="subP" href="https://arxiv.org/abs/2003.03113">[Paper]</a> | 
+							<a href="###" onclick="openShutManager(this,'lin2020pixel')">[Bibtex]</a> | 
+							<a class="subC" href="https://github.com/Elin24/PSPL">[Code]</a>		
+						</p2>
+						<div id="lin2020pixel" style="display:none">
+						<pre p>
+@INPROCEEDINGS{lin2020pixel,
+	author={Lin, Wei and Gao, Junyu and  Wang, Qi and Li Xuelong},
+	booktitle={Proc. IEEE International Conference on Acoustics, Speech and Signal Processing}, 
+	title={Pixel-Level Self-Paced Learning For Super-Resolution}, 
+	year={2020},
+	pages={2538-2542}
+}</pre>
+					</div>
+					</div>
 				</div>
+			</div>
+		 </div>
+		 <div class="education" id="arxiv">
+			<h3 class="clr4">ArXiv</h3>
+			<div class="education_details">
+				<h6>Pre-print, Technical Report</h6>
 				<div class="article">
 					<div class="subsectionImage" >
 						<img src="images/nlt.png"/>
@@ -446,38 +504,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 
-			
-		 <div class="skills" id="act">
-			<h3 class="clr2">Professional Activities</h3>
-			<!--<div class="skill_info">
-			<p>Duis egestas tortor metus, vitae venenatis tortor tristique at. Pellentesque dignissim purus vitae enim blandit, sed tristique enim malesuada. Maecenas dolor erat,
-			volutpat a tellus eu, euismod iaculis urna. Nulla dui purus, viverra viverra dolor non, malesuada dictum purus.</p>
-			</div> -->
-			<div class="skill_list">
-				<div class="skill1">
-					<h4>Program Committee Member</h4>
-					<ul>					 
-					   <li>ITSC2018</li>
-					   <li>ICEEAC2017</li>
-					   <li>MSEE2016</li>
-					</ul>
-				</div>
-				<div class="skill2">
-					<h4>Regular Reviewer</h4>
-					<ul>					 
-					   <li>CVPR'20, NeurIPS'20, BMVC'19/'20, WACV'21</li>
-					   <li>IEEE T-ITS, T-CSVT, T-CYB, T-NNLS</li>
-					   <li>IEEE GRSL</li>
-					   <li>PR, Neurocomputing</li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
 
-		 <div class="copywrite">
-			 <p>Update: 2020.7 by Junyu Gao</p>
-		 </div>
 	 </div>
 </div>
 <!---->
