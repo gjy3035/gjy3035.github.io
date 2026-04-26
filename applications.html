@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>行业应用 | 高君宇</title>
+    <meta name="description" content="多模态增强智能实验室（MAIL）行业应用案例。">
+    <meta name="author" content="Junyu Gao">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand lab-brand" href="index.html" aria-label="多模态增强智能实验室">
+          <img class="brand-logo" src="images/lab/mail-icon.jpg" alt="MAIL 实验室图标">
+          <span>
+            <strong>多模态增强智能实验室</strong>
+            <small>MAIL</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="index.html#about">个人简介</a>
+          <a href="index.html#news">最新动态</a>
+          <a href="publications.html">论文列表</a>
+          <a href="index.html#projects">科研项目</a>
+          <a class="active" href="applications.html">行业应用</a>
+          <a href="team.html">团队情况</a>
+          <a href="index.html#contact">联系方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container publication-page application-page">
+      <section class="page-heading">
+        <h1>行业应用案例</h1>
+        <p>围绕低空智能、光电生成、遥感理解、城市治理与公共空间智能感知等真实场景，持续整理实验室技术落地案例。</p>
+      </section>
+
+      <section class="application-case" id="multiband-opto-generation">
+        <div class="case-intro">
+          <p class="case-kicker">Optoelectronic Image Generation</p>
+          <h2>多波段光电图像生成系统</h2>
+          <p>
+            系统主打多波段光电图像的可控生成，面向目标仿真与样本构建需求，将目标类别、成像波段、环境背景、天气条件、参考图结构与三维姿态等因素显式纳入生成过程。文生图、2D 参考图生图与 3D Mesh 生图分别从语义标签、参考图约束和三维几何三个角度实现可控生成，为目标识别、变化检测和仿真评测提供可调、可复现的数据支撑。
+          </p>
+          <ul class="case-tags" aria-label="系统能力标签">
+            <li>多波段可控生成</li>
+            <li>目标-波段-场景控制</li>
+            <li>参考图结构约束</li>
+            <li>三维姿态控制</li>
+            <li>可复现样本构建</li>
+          </ul>
+        </div>
+
+        <div class="case-screenshots" aria-label="系统截图">
+          <figure>
+            <img src="images/applications/multiband-opto-text.png" alt="多波段光电图像生成系统文生图界面截图">
+            <figcaption>文生图模式：通过目标、波段、环境和天气标签进行语义级可控生成。</figcaption>
+          </figure>
+          <figure>
+            <img src="images/applications/multiband-opto-2dref.png" alt="多波段光电图像生成系统 2D 参考图生图界面截图">
+            <figcaption>2D 参考图生图模式：以参考图主体结构为约束，控制视角、场景和成像风格。</figcaption>
+          </figure>
+          <figure>
+            <img src="images/applications/multiband-opto-3dmesh.png" alt="多波段光电图像生成系统 3D Mesh 生图界面截图">
+            <figcaption>3D Mesh 生图模式：通过三维模型、姿态和光照条件实现几何级可控生成。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="application-case" id="uav-task-planning">
+        <div class="case-intro">
+          <p class="case-kicker">UAV Mission Planning</p>
+          <h2>无人机任务规划系统</h2>
+          <p>
+            系统面向低空复杂场景下的无人机任务筹划与复盘评估，支持在地图上快速添加飞行器、任务目标、感知节点、载体和基础设施等要素，自动生成协同任务方案。任务执行过程中可展示推理过程、可行性检查、预检清单与时间轴回放，并输出结构化报告与方案，为人机协同规划、方案审查和仿真复盘提供支撑。
+          </p>
+          <ul class="case-tags" aria-label="系统能力标签">
+            <li>多要素建模</li>
+            <li>覆盖范围可视化</li>
+            <li>协同任务规划</li>
+            <li>推理过程展示</li>
+            <li>方案复盘评估</li>
+          </ul>
+        </div>
+
+        <div class="case-screenshots case-screenshots-wide" aria-label="系统截图">
+          <figure>
+            <img src="images/applications/uav-task-planning-scene.png" alt="无人机任务规划系统场景建模界面截图">
+            <figcaption>场景建模：快速布设飞行器、任务目标、感知节点与基础设施，直观展示覆盖范围与空间态势。</figcaption>
+          </figure>
+          <figure>
+            <img src="images/applications/uav-task-planning-reasoning.png" alt="无人机任务规划系统推理过程界面截图">
+            <figcaption>任务推理：规划启动后展示推理进度、分析过程与关键约束条件。</figcaption>
+          </figure>
+          <figure>
+            <img src="images/applications/uav-task-planning-validation.png" alt="无人机任务规划系统方案校验界面截图">
+            <figcaption>方案校验：生成结构化任务方案，并同步给出目标覆盖、资产状态、约束条件和风险评估结果。</figcaption>
+          </figure>
+          <figure>
+            <img src="images/applications/uav-task-planning-result.png" alt="无人机任务规划系统任务复盘界面截图">
+            <figcaption>任务复盘：支持按时间轴回放全流程，查看任务报告与执行方案。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="application-case" id="crowd-monitoring">
+        <div class="case-intro">
+          <p class="case-kicker">Crowd Monitoring</p>
+          <h2>人群监控系统</h2>
+          <p>
+            系统面向商圈、园区、车站、校园和大型活动等民用公共空间，围绕人群密度估计、客流趋势感知、异常拥挤预警与可视化管理构建视频智能分析能力。通过对实时视频流进行人群计数、区域热度分析和时空变化展示，可为公共空间运营、安全管理和应急调度提供辅助决策依据。
+          </p>
+          <ul class="case-tags" aria-label="系统能力标签">
+            <li>人群密度估计</li>
+            <li>客流趋势感知</li>
+            <li>异常拥挤预警</li>
+            <li>可视化管理</li>
+            <li>民用公共空间</li>
+          </ul>
+        </div>
+
+        <div class="case-video" aria-label="人群监控系统视频 Demo">
+          <iframe
+            src="https://player.bilibili.com/player.html?bvid=BV1K541157MK&page=1&t=0&autoplay=0&danmaku=0&high_quality=1"
+            title="人群监控系统 Demo 视频"
+            loading="lazy"
+            allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <p class="back-link"><a href="index.html">返回首页</a></p>
+    </main>
+
+    <div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="系统截图放大预览" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="关闭预览">×</button>
+      <div class="lightbox-content">
+        <figure class="lightbox-frame">
+          <img src="" alt="">
+          <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <div class="lightbox-controls" aria-label="图片切换">
+          <button class="lightbox-nav lightbox-prev" type="button" aria-label="上一张">‹</button>
+          <button class="lightbox-nav lightbox-next" type="button" aria-label="下一张">›</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Junyu Gao</p>
+        <p>行业应用案例将持续补充与更新。</p>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const lightbox = document.querySelector('#image-lightbox');
+        const lightboxImage = lightbox.querySelector('img');
+        const caption = lightbox.querySelector('#lightbox-caption');
+        const closeButton = lightbox.querySelector('.lightbox-close');
+        const prevButton = lightbox.querySelector('.lightbox-prev');
+        const nextButton = lightbox.querySelector('.lightbox-next');
+        const groups = [];
+        let activeGroup = [];
+        let activeIndex = 0;
+        let lastTrigger = null;
+
+        document.querySelectorAll('.application-case').forEach((caseBlock) => {
+          const images = Array.from(caseBlock.querySelectorAll('.case-screenshots img'));
+          if (!images.length) {
+            return;
+          }
+
+          const group = images.map((image) => {
+            const figure = image.closest('figure');
+            return {
+              image,
+              src: image.currentSrc || image.src,
+              alt: image.alt || '系统截图',
+              caption: figure?.querySelector('figcaption')?.textContent?.trim() || image.alt || ''
+            };
+          });
+
+          groups.push(group);
+          images.forEach((image, index) => {
+            image.tabIndex = 0;
+            image.setAttribute('role', 'button');
+            image.setAttribute('aria-label', `${image.alt || '系统截图'}，点击放大查看`);
+            image.addEventListener('click', () => openLightbox(group, index, image));
+            image.addEventListener('keydown', (event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openLightbox(group, index, image);
+              }
+            });
+          });
+        });
+
+        function openLightbox(group, index, trigger) {
+          activeGroup = group;
+          activeIndex = index;
+          lastTrigger = trigger;
+          updateLightbox();
+          lightbox.classList.add('is-open');
+          lightbox.setAttribute('aria-hidden', 'false');
+          document.body.classList.add('lightbox-open');
+          closeButton.focus();
+        }
+
+        function closeLightbox() {
+          lightbox.classList.remove('is-open');
+          lightbox.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('lightbox-open');
+          lightboxImage.removeAttribute('src');
+          lightboxImage.alt = '';
+          caption.textContent = '';
+          if (lastTrigger) {
+            lastTrigger.focus();
+          }
+        }
+
+        function showImage(offset) {
+          if (!activeGroup.length) {
+            return;
+          }
+          activeIndex = (activeIndex + offset + activeGroup.length) % activeGroup.length;
+          updateLightbox();
+        }
+
+        function updateLightbox() {
+          const item = activeGroup[activeIndex];
+          const hasMultiple = activeGroup.length > 1;
+          lightboxImage.src = item.src;
+          lightboxImage.alt = item.alt;
+          caption.textContent = item.caption;
+          prevButton.hidden = !hasMultiple;
+          nextButton.hidden = !hasMultiple;
+          caption.hidden = !item.caption;
+        }
+
+        function bindControl(button, action) {
+          let handledByPointer = false;
+          button.addEventListener('pointerdown', (event) => {
+            handledByPointer = true;
+            event.preventDefault();
+            action();
+            window.setTimeout(() => {
+              handledByPointer = false;
+            }, 180);
+          });
+          button.addEventListener('click', () => {
+            if (!handledByPointer) {
+              action();
+            }
+          });
+        }
+
+        bindControl(closeButton, closeLightbox);
+        bindControl(prevButton, () => showImage(-1));
+        bindControl(nextButton, () => showImage(1));
+        lightbox.addEventListener('click', (event) => {
+          if (event.target === lightbox) {
+            closeLightbox();
+          }
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (!lightbox.classList.contains('is-open')) {
+            return;
+          }
+          if (event.key === 'Escape') {
+            closeLightbox();
+          } else if (event.key === 'ArrowLeft') {
+            showImage(-1);
+          } else if (event.key === 'ArrowRight') {
+            showImage(1);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
