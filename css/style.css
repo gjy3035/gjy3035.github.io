@@ -647,6 +647,11 @@ a:hover {
   aspect-ratio: 16 / 9;
 }
 
+.case-screenshots-contain img {
+  object-fit: contain;
+  background: #fff;
+}
+
 .case-screenshots figcaption {
   margin-top: 8px;
   color: var(--muted);
