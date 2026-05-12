@@ -678,11 +678,12 @@ a:hover {
 .case-video-card video {
   display: block;
   width: 100%;
+  max-height: 520px;
   aspect-ratio: 16 / 9;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #0f172a;
-  object-fit: cover;
+  background: #fff;
+  object-fit: contain;
 }
 
 .case-video-card figcaption {
