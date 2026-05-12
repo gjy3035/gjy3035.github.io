@@ -664,6 +664,34 @@ a:hover {
   max-width: 820px;
 }
 
+.case-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.case-video-card {
+  margin: 0;
+}
+
+.case-video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0f172a;
+  object-fit: cover;
+}
+
+.case-video-card figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .case-video iframe {
   display: block;
   width: 100%;
@@ -1076,6 +1104,10 @@ a:hover {
   }
 
   .case-screenshots {
+    grid-template-columns: 1fr;
+  }
+
+  .case-videos {
     grid-template-columns: 1fr;
   }
 
